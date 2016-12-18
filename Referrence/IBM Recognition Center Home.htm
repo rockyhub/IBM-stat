@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://ibmrr.performnet.com/ibmrr/loginSuccess.do -->
+<html lang="en_US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<title>IBM Recognition Center Home</title>
+	<link rel="stylesheet" href="./IBM Recognition Center Home_files/main.css" type="text/css" media="screen" title="">
+	<link rel="stylesheet" href="./IBM Recognition Center Home_files/popup.css" type="text/css">
+	<link rel="stylesheet" href="./IBM Recognition Center Home_files/css-cp-promotion.css" type="text/css">
+ 	<link rel="stylesheet" href="./IBM Recognition Center Home_files/css-cp-print.css" media="print" type="text/css">
+ 	<link rel="stylesheet" href="./IBM Recognition Center Home_files/core.css" media="print" type="text/css">
+      <link rel="stylesheet" href="./IBM Recognition Center Home_files/theme.css" type="text/css">
+ 	<link rel="stylesheet" href="./IBM Recognition Center Home_files/leadforce.css" type="text/css">
+	<!--<script type="text/javascript" src="./IBM Recognition Center Home_files/jquery-1.4.min.js"></script>
+	<script type="text/javascript" src="./IBM Recognition Center Home_files/ui.core.js"></script>
+	<script type="text/javascript" src="./IBM Recognition Center Home_files/ui.datepicker.js"></script>
+	<script type="text/javascript" src="./IBM Recognition Center Home_files/main.js" charset="utf-8"></script>
+	<script type="text/javascript" src="./IBM Recognition Center Home_files/jquery.touchSwipe-1.2.4.js"></script>
+	<script type="text/javascript" src="./IBM Recognition Center Home_files/commonFunctions.js"></script> 
+	<script type="text/javascript" src="./IBM Recognition Center Home_files/raphael-min.js"></script>  
+    <script type="text/javascript" src="./IBM Recognition Center Home_files/raphael-common.js"></script>     -->
+	
+	
+<!--xfs -  reference[https://www.codemagi.com/blog/post/194] -->
+
+  <script type="text/javascript">
+    if (self === top) {
+        var antiClickjack = document.getElementById("antiClickjack");
+        antiClickjack.parentNode.removeChild(antiClickjack);
+    } else {
+        top.location = self.location;
+    }
+	</script>
+	<!--xfs END  -->
+	
+	<script src="./IBM Recognition Center Home_files/common.js" type="text/javascript"></script>
+	<script src="./IBM Recognition Center Home_files/popaction.js" type="text/javascript"></script>
+</head>
+<body>
+<a name="banner_top" style="display:none">banner</a>
+	<!-- server-env : prod0002m1-prod -->
+ 
+   <script src="./IBM Recognition Center Home_files/quicksearch.js" type="text/javascript"></script>
+   
+   <script type="text/javascript">
+   function validateQuickSearchForm() {
+	   if ($('#quickSearchValue').val().trim().length < 1) { return false;}
+	   else return true;
+   }
+   </script>
+   
+  
+	<div id="container" class="home">
+
+<div id="header">
+    
+	    
+	
+<script type="text/javascript">
+	function selTab(tabid)
+	{
+		var queryString = "tabid="+tabid;
+		$.ajax({
+			url: "/ibmrr/selTab.do?doNotSaveToken=Y",
+			data: queryString,
+			success: function(data){
+				
+			}
+		});
+	}
+</script>
+
+<div id="nav-bar">
+	<div class="logo-div"><a href="https://ibmrr.performnet.com/ibmrr/homePage.do">  
+		<img src="./IBM Recognition Center Home_files/logo.gif" title="IBM-LOGO - click here and you will be taken to the HomePage of this site" alt="IBM-LOGO - click here and you will be taken to the HomePage of this site" class="primary-logo">
+	</a></div>
+	<div class="left-nav">
+	
+		<ul role="menu">
+			<li role="menuitem" aria-haspopup="true" aria-labelledby="menuLabelName8 " id="home.navmenu.user.participants.PARTICIPANTS">
+			<a href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#" alt="Recognition Center" title="Recoginition Center" tabindex="8" onclick="selTab(&#39;home.navmenu.user.participants.PARTICIPANTS&#39;);"><span id="menuLabelName8">Recognition Center</span></a>
+
+			</li>
+			<li role="menuitem" aria-haspopup="true" aria-labelledby="menuLabelName9 " id="home.navmenu.user.promotions.PROMOTIONS">
+			<a href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#" alt="Programs" title="Programs" tabindex="9" onclick="selTab(&#39;home.navmenu.user.promotions.PROMOTIONS&#39;);"><span id="menuLabelName9">Upcoming Celebrations</span></a>
+			</li>
+			<li role="menuitem" aria-haspopup="true" aria-labelledby="menuLabelName10 " id="home.navmenu.user.budgets.BUDGETS">
+			<a href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#" alt="Budgets" title="Budgets" tabindex="10" onclick="selTab(&#39;home.navmenu.user.budgets.BUDGETS&#39;);"><span id="menuLabelName10">Activity History</span></a>
+			</li>
+			<li role="menuitem" aria-haspopup="true" aria-labelledby="menuLabelName11 " id="home.navmenu.user.communications.COMMUNICATIONS">
+			<a href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#" alt="Communications" title="Communications" tabindex="11" onclick="selTab(&#39;home.navmenu.user.communications.COMMUNICATIONS&#39;);"><span id="menuLabelName11">Reports</span></a>
+			</li>
+			<li role="menuitem" aria-haspopup="true" aria-labelledby="menuLabelName12 " id="home.navmenu.user.system.SYSTEM">
+			<a href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#" alt="System" title="System" tabindex="12" onclick="selTab(&#39;home.navmenu.user.system.SYSTEM&#39;);"><span id="menuLabelName12">News</span></a>
+			</li>
+			<li role="menuitem" aria-haspopup="true" aria-labelledby="menuLabelName13 " id="home.navmenu.user.help.HELP">
+			<a href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#" alt="Help" title="Help" tabindex="13" onclick="selTab(&#39;home.navmenu.user.help.HELP&#39;);"><span id="menuLabelName13">FAQ's</span></a>
+			</li>
+			<li role="menuitem" aria-haspopup="true" aria-labelledby="menuLabelName16 " id="ibmrr.user.guide.TITLE">
+			<a href="https://ibmrr.performnet.com/ibmrr/ibmrrUserGuide.do" alt="User Guides" title="User Guides" tabindex="16" onclick="selTab(&#39;ibmrr.user.guide.TITLE&#39;);"><span id="menuLabelName16">User Guides</span></a>
+			</li>
+		</ul>
+	</div>
+	<div class="right-nav">
+		<ul>
+			<li><a href="12345 Blue points">1234 Blue Points</a></li>
+		</ul>
+	</div>
+</div>
+
+	
+
+</div>
+
+
+
+		
+		
+
+		
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="main" class="content">
+  
+  
+	
+		<div class="column1"> 
+	    
+
+	
+	
+    
+
+
+
+
+
+
+
+
+
+<script>
+  $(document).ready(function(){
+    $.ajax({
+      url: "/ibmrr/tilesInsertAjax.do?doNotSaveToken=Y",
+      type: "POST",
+      data: {"definition":"homepage.tile.news", "flush":"true", "ignore":"true"},
+      success: function(data) {
+        //$( homepage_tile_news_spinner ).hide();
+        if(data != null && data != '' && data != 'null') {
+        	try {
+          		$( homepage_tile_news ).replaceWith(data);
+          		$.getScript("/ibmrr/scripts/main.js");
+        	}
+        	catch(err)
+        	{
+        	}
+        }
+      }
+    });
+  });
+</script>  
+
+<div class="module" id="news-carousel">
+   
+    <div class="guts carousel">
+
+        <ul class="horses" style="width: 8622px; left: -1916px;">
+	                <li title="MCA Budget" class="horse layout1 select" style="background: url(images/client/mcavideo.jpg);">
+                        <h2><p>Manager's Choice Award BluePoints</p></h2>
+ 					    <p>Use your MCA BluePoints Budget before they expire on 30 November.<br> Watch this short video <a href="https://ibmrr.performnet.com/ibmrr/images/client/MCAvideo.mp4">HERE</a>.</p>
+						<p><a href="https://ibmrr.performnet.com/ibmrr/g3ReduxNewsStoryArchive.do#NEWS_Video" onclick="selTab(&#39;home.nav.NEWS&#39;);" onkeypress="if (event.keyCode==13 || event.keyCode==32){selTab(&#39;home.nav.NEWS&#39;);}"><span><span>full story</span></span></a></p>
+		            </li>
+	                <li title="Laptop" class="horse layout1" style="background: url(images/client/Redeem_News.png);">
+                        <h2>Redeem your BluePoints now!</h2>
+ 					    <p>Click on the Redeem BluePoints tab to visit the IBM catalog of awards and shop from a vast selection of merchandise choices.<br></p>
+						<p><a href="https://ibmrr.performnet.com/ibmrr/g3ReduxNewsStoryArchive.do#NEWS_Redeem" onclick="selTab(&#39;home.nav.NEWS&#39;);" onkeypress="if (event.keyCode==13 || event.keyCode==32){selTab(&#39;home.nav.NEWS&#39;);}"><span><span>full story</span></span></a></p>
+		            </li>
+	                <li title="Globe" class="horse layout1" style="background: url(images/client/Recogize_Newsstory.jpg);">
+                        <h2>Recognize an IBMer today!</h2>
+ 					    <p>Check out the reasons why you should send IBMer Appreciation Cards and BlueThx recognitions. <br></p>
+						<p><a href="https://ibmrr.performnet.com/ibmrr/g3ReduxNewsStoryArchive.do#NEWS_Recognize" onclick="selTab(&#39;home.nav.NEWS&#39;);" onkeypress="if (event.keyCode==13 || event.keyCode==32){selTab(&#39;home.nav.NEWS&#39;);}"><span><span>full story</span></span></a></p>
+		            </li>
+		            <li title="Image" class="horse layout1" style="background: url(images/client/security_system_958x238.png);">
+                        <h2>2016 Security Reference Rewards Program</h2>
+ 					    <p></p><p>We all know that a good reference can be the difference between winning or losing an <br> opportunity.&nbsp; Therefore it's critical that we continually contribute net new references.</p><p></p>
+						<p><a href="https://ibmrr.performnet.com/ibmrr/g3ReduxNewsStoryArchive.do#Security_Reference_ITN" onclick="selTab(&#39;home.nav.NEWS&#39;);" onkeypress="if (event.keyCode==13 || event.keyCode==32){selTab(&#39;home.nav.NEWS&#39;);}"><span><span>full story</span></span></a></p>
+		            </li>
+					<li title="Manager&#39;s Choice Awards Image" class="horse layout1" style="background: url(images/client/MCA_238x958.jpg);">
+                        <h2>2016 Manager’s Choice Awards [MCA]</h2>
+ 					    <p>Manager’s Choice Award is a simple, yet powerful, way to recognize teammates and colleagues for demonstrating our <br>Practices throughout the year.</p>
+						<p><a href="https://ibmrr.performnet.com/ibmrr/g3ReduxNewsStoryArchive.do#MCA Manager and Employee Welcome" onclick="selTab(&#39;home.nav.NEWS&#39;);" onkeypress="if (event.keyCode==13 || event.keyCode==32){selTab(&#39;home.nav.NEWS&#39;);}"><span><span>full story</span></span></a></p>
+		            </li>
+					<li title="GTS P2P Program" class="horse layout1" style="background: url(images/client/p2p_recognition_news_banner.jpg);">
+                        <h2>Welcome to the GTS Peer to Peer Recognition Program</h2>
+ 					    <p>Recognizing your peers for outstanding contributions</p>
+						<p><a href="https://ibmrr.performnet.com/ibmrr/g3ReduxNewsStoryArchive.do#GTS P2P News" onclick="selTab(&#39;home.nav.NEWS&#39;);" onkeypress="if (event.keyCode==13 || event.keyCode==32){selTab(&#39;home.nav.NEWS&#39;);}"><span><span>full story</span></span></a></p>
+		            </li>
+					<li title="Manager Empowerment Fund Image" class="horse layout1" style="background: url(images/client/958x238_MEF_2.jpg);">
+                        <h2>Manager Empowerment Fund</h2>
+ 					    <p>The funds are provided to First Line Managers to use to <br>encourage teaming, engagement and demonstration of <br>our Practices.</p>
+						<p><a href="https://ibmrr.performnet.com/ibmrr/g3ReduxNewsStoryArchive.do#Manager Empowerment Fund" onclick="selTab(&#39;home.nav.NEWS&#39;);" onkeypress="if (event.keyCode==13 || event.keyCode==32){selTab(&#39;home.nav.NEWS&#39;);}"><span><span>full story</span></span></a></p>
+		            </li>
+					<li title="BluePoints" class="horse layout1" style="background: url(images/client/Bluepoints_New_958x238.jpg);">
+                        <h2>BluePoints</h2>
+ 					    <p>BluePoints ― IBM's digital recognition currency ― are intended to be used by Managers to recognize IBMers when they are essential to our clients, to celebrate an accomplishment, or to reinforce the way they live our Practices. IBMers may redeem their BluePoints selecting from a broad range of merchandise, entertainment and travel options.</p>
+						<p><a href="https://ibmrr.performnet.com/ibmrr/g3ReduxNewsStoryArchive.do#BlueThx" onclick="selTab(&#39;home.nav.NEWS&#39;);" onkeypress="if (event.keyCode==13 || event.keyCode==32){selTab(&#39;home.nav.NEWS&#39;);}"><span><span>full story</span></span></a></p>
+		            </li>
+					<li title="French Canadian Translation" class="horse layout1" style="background: url(images/client/centre_958x238.jpg);">
+                        <h2>Don’t forget to set your language preference</h2>
+ 					    <p>Visit the ‘Account’ Tab and click on the ‘Preference” sub-tab and <br>select French Canadian if you prefer to view the IBM Recognition <br>Center and receive it’s communications in French/Canadian.</p>
+						<p><a href="https://ibmrr.performnet.com/ibmrr/g3ReduxNewsStoryArchive.do#Set your language preference" onclick="selTab(&#39;home.nav.NEWS&#39;);" onkeypress="if (event.keyCode==13 || event.keyCode==32){selTab(&#39;home.nav.NEWS&#39;);}"><span><span>full story</span></span></a></p>
+		            </li>
+					</ul>
+
+        <div class="carousel-interact" style="bottom: 0px;">
+            <ul class="controls">
+                <li class="prev prev-disabled"><a href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#" title="Previous story">prev</a></li>            
+                <li class="playpause"><a href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#" class="paused" title="Play show">paused</a></li>
+                <li class="next"><a href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#" title="Next story">next</a></li>
+            </ul>
+            <!--<a href="/ibmrr/g3ReduxNewsStoryArchive.do" onclick="selTab('home.nav.NEWS');" class="button-alt button-alt-go" id="storyarchive"><span><span>View all</span></span></a>-->
+        <ol class="indexes"><li class="index layout1"><a href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#slide1">slide1</a></li><li class="index layout1"><a href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#slide2">slide2</a></li><li class="index layout1 select"><a href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#slide3">slide3</a></li><li class="index layout1"><a href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#slide4">slide4</a></li><li class="index layout1"><a href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#slide5">slide5</a></li><li class="index layout1"><a href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#slide6">slide6</a></li><li class="index layout1"><a href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#slide7">slide7</a></li><li class="index layout1"><a href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#slide8">slide8</a></li><li class="index layout1"><a href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#slide9">slide9</a></li></ol><ol class="titles" style="width: 737px;"><li class="title">Manager's Choice Award BluePoints</li><li class="title">Redeem your BluePoints now!</li><li class="title">Recognize an IBMer today!</li><li class="title">2016 Security Reference Rewards Program</li><li class="title">2016 Manager’s Choice Awards [MCA]</li><li class="title">Welcome to the GTS Peer to Peer Recognition Program</li><li class="title">Manager Empowerment Fund</li><li class="title">BluePoints</li><li class="title">Don’t forget to set your language preference</li></ol></div>
+	    <a href="https://ibmrr.performnet.com/ibmrr/g3ReduxNewsStoryArchive.do" onclick="selTab(&#39;home.nav.NEWS&#39;);" onkeypress="if (event.keyCode==13 || event.keyCode==32){selTab(&#39;home.nav.NEWS&#39;);}" class="button-alt button-alt-go" id="storyarchive"><span><span>View all</span></span></a>	
+	</div>
+</div>
+</div> 
+		<div class="column2a"><script>
+  $(document).ready(function(){
+    $.ajax({
+      url: "/ibmrr/tilesInsertAjax.do?doNotSaveToken=Y",
+      type: "POST",
+      data: {"definition":"homepage.tile.serviceAnniversary", "flush":"true", "ignore":"true"},
+      success: function(data) {
+        //$( homepage_tile_serviceAnniversary_spinner ).hide();
+        if(data != null && data != '' && data != 'null') {
+        	try {
+          		$( homepage_tile_serviceAnniversary ).replaceWith(data);
+          		$.getScript("/ibmrr/scripts/main.js");
+        	}
+        	catch(err)
+        	{
+        	}
+        }
+      }
+    });
+  });
+</script>  
+
+<div id="serviceAnniversary" class="module tabbed">
+	<div class="topper">
+		<h2>Years of Service Recognition</h2>
+	</div>
+	<!-- ========== Instructions ==========
+                     Note: tabbed modules are a special case, as the module's "topper" DIV is replaced with the tabs.
+                     ==//== -->
+	<ul class="tabs topper">
+		<li class="tab select" style="display: list-item;"><a id="serviceAnnTeamTab" href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#sa_Team"><span>Team</span></a></li>
+		<!-- <li class="tab" style="display: list-item;"><a href="#sa_Network"><span>Network</span></a></li>  -->
+		
+		
+		
+			<li class="tab" style="display: list-item;"><a href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#sa_Country"><span>Country</span></a></li>
+		
+	</ul>
+	<!-- ========== Instructions ==========
+                     Note: tabbed modules are a special case, as the module's "guts" DIV is replaced with the panels.
+                     ==//== -->
+	<ul class="panels guts">
+		<li id="sa_Team" class="panel select" style="display: block;">
+			<div class="anniversaryTile-Content">
+				<h1 class="headings">Upcoming Celebrations!</h1>
+				<h3 class="subHeadings">Congratulate IBMers on this special moment!</h3>
+				<div class="anniversaryItemWrapper">
+					
+					<div class="viewMoreLink">
+						<a title="View More Celebrations" alt="View More Celebrations" href="https://ibmrr.performnet.com/ibmrr/srp/teamServiceAnniversaryDetails.do">View More Celebrations</a>
+					</div>
+				</div>
+			</div>
+		</li>
+		<!-- /.panel#activity-center -->
+		<!-- <li id="sa_Network" class="panel" style="display: none;">
+			<div class="anniversaryTile-Content">
+				<h1 class="headings">Upcoming Celebrations!</h1>
+				<h3 class="subHeadings">Congratulate IBMers on this special moment!</h3>
+				<div class="anniversaryItemWrapper">
+
+					
+					<div class="viewMoreLink">
+						<a title="View More Celebrations" alt="View More Celebrations"
+							href="srp/networkServiceAnniversaryDetails.do">View More Celebrations</a>
+					</div>
+				</div>
+			</div>
+		</li>  -->
+		
+		
+		
+		
+		
+		
+			<!-- /.panel#activity-center -->
+			<li id="sa_Country" class="panel" style="display: none;">
+				<div class="anniversaryTile-Content">
+					<h1 class="headings">Upcoming Celebrations!</h1>
+					<h3 class="subHeadings">Congratulate IBMers on this special moment!</h3>
+					<div class="anniversaryItemWrapper">
+
+						
+						<div class="viewMoreLink">
+							<a title="View More Celebrations" alt="View More Celebrations" href="https://ibmrr.performnet.com/ibmrr/srp/cntryServiceAnniversaryDetails.do">View More Celebrations</a>
+						</div>
+					</div>
+				</div>
+			</li>	
+		
+	</ul>
+</div>
+
+	
+    
+  
+	
+
+	
+	
+    
+
+
+
+
+
+
+
+
+
+<script>
+  $(document).ready(function(){
+    $.ajax({
+      url: "/ibmrr/tilesInsertAjax.do?doNotSaveToken=Y",
+      type: "POST",
+      data: {"definition":"homepage.tile.ibmrr_pending_tasks", "flush":"true", "ignore":"true"},
+      success: function(data) {
+        //$( homepage_tile_ibmrr_pending_tasks_spinner ).hide();
+        if(data != null && data != '' && data != 'null') {
+        	try {
+          		$( homepage_tile_ibmrr_pending_tasks ).replaceWith(data);
+          		$.getScript("/ibmrr/scripts/main.js");
+        	}
+        	catch(err)
+        	{
+        	}
+        }
+      }
+    });
+  });
+</script>  
+
+<div id="homepage_tile_ibmrr_pending_tasks"></div>
+
+	
+    
+  
+	
+
+	
+	
+    
+
+
+
+
+
+
+
+
+
+<script>
+  $(document).ready(function(){
+    $.ajax({
+      url: "/ibmrr/tilesInsertAjax.do?doNotSaveToken=Y",
+      type: "POST",
+      data: {"definition":"homepage.tile.ibmrr_available_tasks", "flush":"true", "ignore":"true"},
+      success: function(data) {
+        //$( homepage_tile_ibmrr_available_tasks_spinner ).hide();
+        if(data != null && data != '' && data != 'null') {
+        	try {
+          		$( homepage_tile_ibmrr_available_tasks ).replaceWith(data);
+          		$.getScript("/ibmrr/scripts/main.js");
+        	}
+        	catch(err)
+        	{
+        	}
+        }
+      }
+    });
+  });
+</script>  
+
+<div id="homepage_tile_ibmrr_available_tasks"></div>
+
+	
+    
+  
+	
+
+	
+	
+    
+
+
+
+
+
+
+
+
+
+<script>
+  $(document).ready(function(){
+    $.ajax({
+      url: "/ibmrr/tilesInsertAjax.do?doNotSaveToken=Y",
+      type: "POST",
+      data: {"definition":"homepage.tile.leftbannershowallfull", "flush":"true", "ignore":"true"},
+      success: function(data) {
+        //$( homepage_tile_leftbannershowallfull_spinner ).hide();
+        if(data != null && data != '' && data != 'null') {
+        	try {
+          		$( homepage_tile_leftbannershowallfull ).replaceWith(data);
+          		$.getScript("/ibmrr/scripts/main.js");
+        	}
+        	catch(err)
+        	{
+        	}
+        }
+      }
+    });
+  });
+</script>  
+
+<div id="homepage_tile_leftbannershowallfull"></div>
+
+	
+    
+  
+	
+
+	
+	
+    
+
+
+
+
+
+
+
+
+
+<script>
+  $(document).ready(function(){
+    $.ajax({
+      url: "/ibmrr/tilesInsertAjax.do?doNotSaveToken=Y",
+      type: "POST",
+      data: {"definition":"homepage.tile.featureditems", "flush":"true", "ignore":"true"},
+      success: function(data) {
+        //$( homepage_tile_featureditems_spinner ).hide();
+        if(data != null && data != '' && data != 'null') {
+        	try {
+          		$( homepage_tile_featureditems ).replaceWith(data);
+          		$.getScript("/ibmrr/scripts/main.js");
+        	}
+        	catch(err)
+        	{
+        	}
+        }
+      }
+    });
+  });
+</script>  
+
+
+<span id="featured_items"></span>
+
+	
+    
+  
+	
+		</div> 
+		<div class="column2b"> 
+        
+
+	
+	
+    
+
+
+
+
+
+
+
+
+
+<script>
+  $(document).ready(function(){
+    $.ajax({
+      url: "/ibmrr/tilesInsertAjax.do?doNotSaveToken=Y",
+      type: "POST",
+      data: {"definition":"homepage.tile.budgettracker", "flush":"true", "ignore":"true"},
+      success: function(data) {
+        //$( homepage_tile_budgettracker_spinner ).hide();
+        if(data != null && data != '' && data != 'null') {
+        	try {
+          		$( homepage_tile_budgettracker ).replaceWith(data);
+          		$.getScript("/ibmrr/scripts/main.js");
+        	}
+        	catch(err)
+        	{
+        	}
+        }
+      }
+    });
+  });
+</script>  
+
+<div id="homepage_tile_budgettracker"></div>
+
+	
+    
+  
+	
+
+	
+	
+    
+
+
+
+
+
+
+
+
+
+<script>
+  $(document).ready(function(){
+    $.ajax({
+      url: "/ibmrr/tilesInsertAjax.do?doNotSaveToken=Y",
+      type: "POST",
+      data: {"definition":"homepage.tile.ibmrr_budget_meter", "flush":"true", "ignore":"true"},
+      success: function(data) {
+        //$( homepage_tile_ibmrr_budget_meter_spinner ).hide();
+        if(data != null && data != '' && data != 'null') {
+        	try {
+          		$( homepage_tile_ibmrr_budget_meter ).replaceWith(data);
+          		$.getScript("/ibmrr/scripts/main.js");
+        	}
+        	catch(err)
+        	{
+        	}
+        }
+      }
+    });
+  });
+</script>  
+
+<div id="homepage_tile_ibmrr_budget_meter"></div>
+
+	
+    
+  
+	
+
+	
+	
+    
+
+
+
+
+
+
+
+
+
+<script>
+  $(document).ready(function(){
+    $.ajax({
+      url: "/ibmrr/tilesInsertAjax.do?doNotSaveToken=Y",
+      type: "POST",
+      data: {"definition":"homepage.tile.rightbannershowallfull", "flush":"true", "ignore":"true"},
+      success: function(data) {
+        //$( homepage_tile_rightbannershowallfull_spinner ).hide();
+        if(data != null && data != '' && data != 'null') {
+        	try {
+          		$( homepage_tile_rightbannershowallfull ).replaceWith(data);
+          		$.getScript("/ibmrr/scripts/main.js");
+        	}
+        	catch(err)
+        	{
+        	}
+        }
+      }
+    });
+  });
+</script>  
+
+<div id="homepage_tile_rightbannershowallfull"></div>
+
+	
+    
+  
+	
+
+	
+	
+    
+
+
+
+
+
+
+
+
+
+<script>
+  $(document).ready(function(){
+    $.ajax({
+      url: "/ibmrr/tilesInsertAjax.do?doNotSaveToken=Y",
+      type: "POST",
+      data: {"definition":"homepage.tile.plateauawards", "flush":"true", "ignore":"true"},
+      success: function(data) {
+        //$( homepage_tile_plateauawards_spinner ).hide();
+        if(data != null && data != '' && data != 'null') {
+        	try {
+          		$( homepage_tile_plateauawards ).replaceWith(data);
+          		$.getScript("/ibmrr/scripts/main.js");
+        	}
+        	catch(err)
+        	{
+        	}
+        }
+      }
+    });
+  });
+</script>  
+
+<div id="homepage_tile_plateauawards"></div>
+
+	
+    
+  
+
+  
+	</div> 
+  
+  
+            
+</div>
+  <span class="login-content-small">
+   You can download <a href="https://get.adobe.com/uk/reader/" title="You can download Adobe Acrobat Reader  Opens in a new window" target="_blank">Adobe Acrobat Reader </a>Here.	
+  </span>      
+        
+
+		
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer">            
+	<p class="copyright">© 2016 BI WORLDWIDE ® The transactions on this Recognition web site, with exception of Cash Rewards, are conducted by BI WORLDWIDE.</p>
+
+	<ul id="nav-final">
+		<li class="accessible"><a href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#container">Return to top of page</a></li>
+		<li class="accessible"><a href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#nav">Return to main navigation</a></li>
+		<li class="accessible"><a href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#main">Return to top of content</a></li>
+		
+		
+		<li><span id="sitemap"></span><a href="https://ibmrr.performnet.com/ibmrr/sitemap.do" onclick="selTab(&#39;home.nav.PRIVACY&#39;);" onkeypress="if (event.keyCode==13 || event.keyCode==32){selTab(&#39;home.nav.PRIVACY&#39;);}">Site Map</a></li>
+		
+		
+	   
+		<li><a href="https://ibmrr.performnet.com/ibmrr/privacy.do" onclick="selTab(&#39;home.nav.PRIVACY&#39;);" onkeypress="if (event.keyCode==13 || event.keyCode==32){selTab(&#39;home.nav.PRIVACY&#39;);}">Privacy Policy</a></li>
+	  
+	  
+		<li><a href="https://ibmrr.performnet.com/ibmrr/termsAndConditionsReview.do?method=review" onclick="selTab(&#39;home.nav.PRIVACY&#39;);" onkeypress="if (event.keyCode==13 || event.keyCode==32){selTab(&#39;home.nav.PRIVACY&#39;}">Terms &amp; Conditions</a></li>
+	  
+		<li class="last"><a href="https://ibmrr.performnet.com/ibmrr/contactUs.do?method=view" onclick="selTab(&#39;home.nav.PRIVACY&#39;);" onkeypress="if (event.keyCode==13 || event.keyCode==32){selTab(&#39;home.nav.PRIVACY&#39;}">Contact Us</a></li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+	var requestBaseURI = '/ibmrr';
+</script>
+
+<script src="./IBM Recognition Center Home_files/custToolTip.js" type="text/javascript"></script>
+
+
+		
+	
+	</div>
+
+    
+	       
+	   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+<script type="text/javascript">
+	   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script><script src="./IBM Recognition Center Home_files/ga.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+	  try 
+	  {
+	     var pageTracker = _gat._getTracker("UA-31523823-1");
+	     
+	     pageTracker._setCustomVar(1, "Page", "Homepage", 3) 
+	     pageTracker._trackPageview();
+	  } 
+	  catch(err) 
+	  {}
+	  function recordOutboundLink(category, action) {
+	      try { 
+			var pageTracker=_gat._getTracker("UA-31523823-1");    
+			pageTracker._trackEvent(category, action); 
+			 
+			 }catch(err){}}
+	   
+</script>
+
+
+
+    
+    
+
+
+<!--<script type="text/javascript">
+
+    function logout()
+    {
+        if ( window.XMLHttpRequest )
+        {
+            var request = new XMLHttpRequest();
+            request.open("POST", "/ibmrr/logout.do", true); 
+            request.onreadystatechange = function () {
+                if ( request.readyState == 4 && request.status == 200 )
+                {
+                }
+            };
+            request.send();
+        }
+    }
+    
+    function logoutAndRedirect()
+    {
+    	document.location = "/ibmrr/logout.do?timeout";
+    }
+    
+    
+    //window.onbeforeunload = logout;
+    
+    
+    setTimeout( "logoutAndRedirect()", 870000 );
+
+</script>-->
+
+
+	<input type="hidden" value="f4b95fff-9f5e-4256-bcc8-b1b3c17b05376c9c1088-93c4-4deb-aa11-abb55980bc112c86c414-cae2-471b-a798-ea21735c053717af65c5-49a8-47c4-93c8-1f55028e5d7db7807974-fb43-4d7b-8757-fda4ad29b79c9acb7166-aa10-4be9-9b36-66cd82044f88f4a3fcff-deda-407b-8def-1f6229fc858c0719f7f6-d4ae-4e85-92e5-bb58b8b5df6c4b8a0e5d-f360-458e-90ef-d4bccd87a4366954a35c-4604-4dfd-9aa7-02a9a10ad6f1">
+
+
+
+<div id="modaloverlay"><iframe title="iFrame Title" src="./IBM Recognition Center Home_files/saved_resource.html" id="modaloverlayiframe"></iframe></div></body></html>

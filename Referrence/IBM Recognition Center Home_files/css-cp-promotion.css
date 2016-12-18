@@ -1,0 +1,97 @@
+/*
+G3+1
+Challengepoint module stylesheet
+Version: 1.0
+Date: 31 December 2009
+Author: Joel Schou, Front End Developer, User Experience Team
+
+Copyright (c) 2009 BI(R). All Rights Reserved. BI(R) is a trade name of Schoeneckers, Inc.
+www.biworldwide.com
+*/
+
+
+/* --- module: challengepoint --- */
+/* this depends on main.css for framework styles */
+
+#challengepoint div.guts {
+	padding: 10px;
+}
+#challengepoint ul {
+	margin: 0;
+	padding: 0;
+	width: 348px;
+	font-weight: bold;
+	list-style: none;
+	overflow: hidden;
+}
+#challengepoint ul li {
+	display: inline;
+	float: left;
+	margin: 0 0 10px 0;
+	width: 348px;
+	font-size: 18px;
+	line-height: 40px;
+}
+#challengepoint ul li  {
+	display: block;
+	padding-left: 50px;
+	text-decoration: none;
+	color: #ff7e00;
+	background: url(../../../../images/designtheme/ibmrr/1/cp-step1.gif) no-repeat;
+}
+#challengepoint ul .step2  {
+	color: #066;
+	background: url(../../../../images/designtheme/ibmrr/1/cp-step2.gif) no-repeat;
+}
+#challengepoint ul .step3  {
+	color: #900;
+	background: url(../../../../images/designtheme/ibmrr/1/cp-step3.gif) no-repeat;
+}
+#challengepoint ul li a:hover {
+	color: #ffad00;
+}
+#challengepoint ul .step2 a:hover {
+	color: #5aa3a4;
+}
+#challengepoint ul .step3 a:hover {
+	color: #be4941;
+}
+#challengepoint p {
+	margin: 0 0 10px 0;
+	font-weight: bold;
+}
+.cp-module-content-yourcp {
+font-family: arial;
+color:#404040;
+font-weight: bold;
+font-size: 12px;
+text-align: center;
+}
+.cp-module-content-stats1 {
+padding-top: 5px;
+font-family: arial;
+color:#404040;
+font-size: 11px;
+line-height: 16px;
+}
+.cp-module-content-stats2 {
+padding-top: 5px;
+font-family: arial;
+font-size: 11px;
+line-height: 16px;
+}
+.cp-module-content-large {
+font-family: arial;
+color:#404040;
+font-size: 20px;
+text-align: center;
+padding-bottom: 10px;
+}
+.cp-module-content-congratulations {
+font-family: arial;
+color:#404040;
+font-size: 20px;
+text-align: center;
+padding-bottom: 10px;
+font-style: italic;
+}
