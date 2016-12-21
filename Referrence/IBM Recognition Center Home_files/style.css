@@ -95,3 +95,72 @@ span.point-txt {
 .carousel-indicators {
   bottom: 20%;
 }
+ /* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* Add a gray background color and some padding to the footer */
+.carousel-inner img {
+  width: 100%; /* Set width to 100% */
+  margin: auto;
+  min-height:200px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+.carousel-caption {
+  display: none; 
+  }
+}
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+  font-size: 11px;
+  color: rgb(90, 90, 90);
+}
+
+footer ul {
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+footer div li {
+    list-style: none;
+    padding-right: 10px;
+}
+footer .footer-nav {
+  text-align: right;
+}
+.navbar-toggle .icon-bar {
+  background-color: #b5b5b5;
+}
+.alert-div {
+  width: 100%;
+  background-color: #2dafe5;
+  padding: 20px 0;
+  color: #fff;
+}
+.alert-div .row {
+  padding: 0 15%;
+}
+.alert-div p a {
+    font-size: 10px;
+    color: #fff;
+}
+.pending-count {
+    font-size: 29px;
+    font-weight: bold;
+    padding-right: 5px;
+}
+.alert-btn {
+    background-color: rgb(65, 120, 190);
+    border: 0;
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+}
+.alert-div p {
+  margin-bottom: 0px;
+}
