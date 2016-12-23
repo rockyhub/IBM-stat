@@ -155,13 +155,48 @@ footer .footer-nav {
     font-weight: bold;
     padding-right: 5px;
 }
-.alert-btn {
-    background-color: rgb(65, 120, 190);
-    border: 0;
-    width: 100%;
-    padding: 5px;
-    margin-top: 10px;
-}
+
 .alert-div p {
   margin-bottom: 0px;
+}
+.budget-section {
+  color: #000;
+  font-size: 18px;
+}
+.budget-section .dropdown a {
+  color: #000;
+}
+.budget-section .dropdown a:hover, .budget-section .dropdown a:focus {
+  color: #000;
+  text-decoration: none;
+}
+.points-txt, .days-txt{
+  font-weight: bold;
+}
+.points-txt {
+  font-size: 100px;
+}
+.days-txt {
+  font-size: 20px;
+}
+.btn-custom {
+  background-color: rgb(65, 120, 190);
+  border-radius: 0;
+  color: #fff;
+}
+.btn-custom:hover, .btn-custom:focus{
+  background-color: rgb(215, 65, 8);
+  color: #fff;
+}
+.tabbtn {
+  background-color: #8f8f8f;
+}
+.tabbtn:hover, .tabbtn:focus{
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
+}
+.tab-content {
+    border: 1px solid #ddd;
+    border-top: 0;
 }
