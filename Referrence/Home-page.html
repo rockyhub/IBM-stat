@@ -15,8 +15,8 @@
   <link rel="stylesheet" href="./IBM Recognition Center Home_files/leadforce.css" type="text/css">
   <link rel="stylesheet" href="./IBM Recognition Center Home_files/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="./IBM Recognition Center Home_files/style.css" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./IBM Recognition Center Home_files/jquery-3.1.1.js"></script>
+  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
   <script src="./IBM Recognition Center Home_files/bootstrap.js"></script>
 
 
@@ -32,11 +32,11 @@
         <span class="icon-bar"></span>                        
       </button>
       <a class="navbar-brand" href="#"><svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="2.893cm" height="1.658cm">
-<image  x="0px" y="0px" width="82px" height="47px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAAAvCAAAAABV+8JYAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfgDBEOIwREn/KrAAACh0lEQVRIx+2WTUhUURiGnztzK3XKn8Qf/OkHE1GMSi3SCFpYCSaEZVmLaBMVRAvTRe6KFu0SCcJFBAbRKqQsWiRFm6BNBVEhBGFQpGQ62jjmyNfinHvPdZhbJhZU823mfb937nvPe77DmbGExa7AojsmLZOWSct/3NJO2J06a3BH8KIhWaVlVRbQ81o3djaqBzqdG60LJFGNeeyfv5z7uuoBEWlwmXrgpiuLWAnvSxk1OJOxODUbwjMeAkSmDE8cfPqSwacC3fFyc1XfoINrG4H3Pa52YQHBgUMmOOUiIuc8Af2CDxlcwId42S4cdoOyygIPXY3l+9vTFwFaA4akNAPhfmBJC/BMD710M8MPFEzbqxfqUwUA3zQpAnJFRF4BbBQRadOvrhA57wQSERHbb5Fcn8Yc294oLAUovgfkAxyr11rMbqhRaJnaFl/L2EwcmbmtSfomgFlHf1ryUaOgM6H5BnfKuiFu8Aog6zSQm+0G9x/PnSiwT4+n34yU/O0AvBgESt4CdgwKP0chpenHwdfHMLdKZcwIGeqjKATkFUyqlZe8i7lmvx489MQE79VXyjrJn8fEz0yYDact7FHebAXYnQ5sqI+qSLRPwgq1Yt+9HJlFHxdNgjnA7AiQmgFMfAUyU8IRwMoz31jYUd9mgks3QJ3MK/iJsGc8x8dhOUB2O5AKsCMAVNA6BOyCkxOQ/pPgC67EqwyvMfixXRcvH77cMqDQlYNc7aD2LpR/Up1RH8tgrcFpXqKqifKIQjmw5xZHgeovjvrnglcafN+un6Ot7DwARx4p0tUMD6/1AjXDqjPkYxlYa/DSoIdklpbtzwLydC8EbBkHKA79xuB/xx+YpOX/ZvkdemeJ4pZJHlcAAAAASUVORK5CYII=" />
-</svg></a>
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="2.893cm" height="1.658cm">
+        <image  x="0px" y="0px" width="82px" height="47px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAAAvCAAAAABV+8JYAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfgDBEOIwREn/KrAAACh0lEQVRIx+2WTUhUURiGnztzK3XKn8Qf/OkHE1GMSi3SCFpYCSaEZVmLaBMVRAvTRe6KFu0SCcJFBAbRKqQsWiRFm6BNBVEhBGFQpGQ62jjmyNfinHvPdZhbJhZU823mfb937nvPe77DmbGExa7AojsmLZOWSct/3NJO2J06a3BH8KIhWaVlVRbQ81o3djaqBzqdG60LJFGNeeyfv5z7uuoBEWlwmXrgpiuLWAnvSxk1OJOxODUbwjMeAkSmDE8cfPqSwacC3fFyc1XfoINrG4H3Pa52YQHBgUMmOOUiIuc8Af2CDxlcwId42S4cdoOyygIPXY3l+9vTFwFaA4akNAPhfmBJC/BMD710M8MPFEzbqxfqUwUA3zQpAnJFRF4BbBQRadOvrhA57wQSERHbb5Fcn8Yc294oLAUovgfkAxyr11rMbqhRaJnaFl/L2EwcmbmtSfomgFlHf1ryUaOgM6H5BnfKuiFu8Aog6zSQm+0G9x/PnSiwT4+n34yU/O0AvBgESt4CdgwKP0chpenHwdfHMLdKZcwIGeqjKATkFUyqlZe8i7lmvx489MQE79VXyjrJn8fEz0yYDact7FHebAXYnQ5sqI+qSLRPwgq1Yt+9HJlFHxdNgjnA7AiQmgFMfAUyU8IRwMoz31jYUd9mgks3QJ3MK/iJsGc8x8dhOUB2O5AKsCMAVNA6BOyCkxOQ/pPgC67EqwyvMfixXRcvH77cMqDQlYNc7aD2LpR/Up1RH8tgrcFpXqKqifKIQjmw5xZHgeovjvrnglcafN+un6Ot7DwARx4p0tUMD6/1AjXDqjPkYxlYa/DSoIdklpbtzwLydC8EbBkHKA79xuB/xx+YpOX/ZvkdemeJ4pZJHlcAAAAASUVORK5CYII=" />
+        </svg></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -64,20 +64,10 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="point-txt">12345</span> Blue Points<svg 
-         xmlns="http://www.w3.org/2000/svg"
-         xmlns:xlink="http://www.w3.org/1999/xlink"
-         width="0.952cm" height="0.847cm">
-        <image  x="0px" y="0px" width="27px" height="24px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAYCAQAAAChSU5wAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfgDBILOx22ka83AAABrklEQVQ4y62UsWsUQRTGf7M3bo6NB+EuSIqkOFAs0sZCSxGEEFFU8E+wSGUhCBYpUiRlCq0sLGxsQtLZBGwkTRJSB1MkUWLUymVv99a93c/CS25ze+FW8INpZt7vffPePMboJx4XSIABhDl/EFq8QZjwOeKEGlfw8akzRQ0nFxCooFgf9UiTsqprWpOqqanbWu+FBk7RKeEVdzjkLg06NHCIaPKFJyzy6yK3jlaF7ulQzzWmd5I2NKVZ7eu+0BslkhQUsCPN6Lq+aVNjetndWxFaVawbuqbj/ksmhMR8Zo+HTPCeOg9IiIiZo8kHUp7ynW0iIuwplLLDGh5btNhlgTV83jJOG0ubkHWq+Pgss43BKGD0r9drnuHSwCWmjYclJAUMhlFSQlw82pyglj3fxXkeE5GRYYEOWfehLwEJBkuVF3wihwnDTW4xTFfZpO/dwqEQ/IY8ZrqrjPJjVhLpw/5FfVgZx6xYWxm5xdrKuF3G/JdOOlRLICOQnxKHlAO+EpylGeRt+YF6mMiABZaG1tciw56mrDDDPC4dDMIMgE23ZRUqxvQ+vIy0ZEMI/wDDePE1w24GTwAAAABJRU5ErkJggg==" />
-        </svg></a></li>
+        <li><a href="#"><span class="point-txt">12345</span><span>Blue Points</span><img src="img/bag-icon.png" alt="Image"/></a></li>
         <li>
           <div class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg 
-               xmlns="http://www.w3.org/2000/svg"
-               xmlns:xlink="http://www.w3.org/1999/xlink"
-               width="2.222cm" height="1.799cm">
-              <image  x="0px" y="0px" width="63px" height="51px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAAzCAMAAAAXQyCWAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABU1BMVEX////////8/P3e4uv7+/z9/f2TpMVVea9MdK1TeK+DmL74+PqKnMBNdq5NdK1Odq5Nda1Oda50jbj7/P3u8PS1wNT5+fvHzt5Rdq5Nda7T2eS9xdlqhrWCl72isMuuutGDmcCdq8lMc62So8SvutJNdK5+lLuaqciXp8fL0uJWebD19vlkgrO/yNr3+PpdfrNmhLSjsc1yi7dQd67w8fbO1OFWe7FSeK/M0+Ho6/Gcq8mBlryntM7h5O3g5OytuNGWpsaUpMWWp8eUpMaVpsaXp8a0v9Tn6vGjsMxQda1Od69Oda2cq8jAyNp5kbqYqceWpsWZqMiYqMeYp8dtiLart9CjscxSdq/l6O/v8fXv8fZOd67x8vbk5+/w8fXk5/Buibj19/ltibZvibjq7PLn6vDn6fDo6/Ll6O7n6fHm6fHm6fDm6O/m6e7n6PDm6O7m6e9zxk9IAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAHdElNRQfgDBIMAgTZMZzIAAABOUlEQVRIx+3PV0/DMBQF4JhpRkLCNptCaNhlE2YKBEPLaEqBsKeN21Lg/z/hF5DyAJIdCQnIebjyPfJnyQoIFyXyv9IrH4n8H/dl5RUhfGVVNayprZP29arWoBuNTZK+WTVaWtvaUYek70RdfHajHknfa/Tx2R8bkPSD5hCfcWRJ+mFjZBSAMX1c0k9MaompaTgzK+nB3LwB0cIikPXAXlpeWQXy/ov8hF9bd6zkxuaW47hJdxuL+p1dlNJNxKNBBFF6T8zv67GDw4znZTNu/Chr5Uz9WMjnoBfYT1IJIX+K/MB+ZqrnIh5dXAYLqF2J+LR5HSyM9I3Q/2/vgsX9w6OI/z6Rj/x/9p/vhPXEJ/SJMkZInjKctwnzCfExZoUixj4/M95gwp7tIqX8Xom+EIJfyRtlNikV3gH56j2cda546wAAAABJRU5ErkJggg==" />
-              </svg></span><span class="badge">12</span>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="user-icon"></span><span class="badge">12</span>
             </a>
             <ul class="dropdown-menu">
               <li><a href="#">My Account</a></li>
@@ -187,7 +177,7 @@
       <li><a href="#">option3</a></li>
     </ul>
   </div>
-  <div class="col-md-12">
+  <div>
     <div class="budget-details col-md-6">
       <p>Remaining Budget</p>
       <p><span class="points-txt">250</span>BluePoints</p>
