@@ -233,7 +233,7 @@ footer .footer-nav {
 .tab-section .tab-content {
     border: 1px solid #ddd;
     border-top: 0;
-    min-height: 300px;
+    height: 320px;
 }
 .items {
   overflow: hidden;
@@ -315,7 +315,9 @@ span.user-icon {
 span.user-icon:hover, span.user-icon:focus {
     background-image: url("../img/user-icon-inactive.png");
 }
-.news-left, .news-right {
+text.highcharts-credits {
+    display: none;
+}.news-left, .news-right {
     border: 1px solid #ddd;
     padding: 0;
     float:left;
