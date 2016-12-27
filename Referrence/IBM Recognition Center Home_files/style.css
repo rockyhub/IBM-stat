@@ -242,7 +242,7 @@ footer .footer-nav {
   box-sizing: border-box;
   padding: 10px;
 }
-.alert-section, .budget-section, .tab-section, .celebrations-section {
+.alert-section, .budget-section, .tab-section, .celebrations-section, .news-section {
   padding-left: 15%;
   padding-right: 15%;
   margin-bottom: 20px;
@@ -315,3 +315,12 @@ span.user-icon {
 span.user-icon:hover, span.user-icon:focus {
     background-image: url("../img/user-icon-inactive.png");
 }
+.news-left, .news-right {
+    border: 1px solid #ddd;
+    padding: 0;
+    float:left;
+    display:inline;
+}
+.news-left h3,.news-left p, .news-right h3,.news-right p {
+  padding:0 10px;
+  }
