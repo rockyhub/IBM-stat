@@ -317,12 +317,21 @@ span.user-icon:hover, span.user-icon:focus {
 }
 text.highcharts-credits {
     display: none;
-}.news-left, .news-right {
+}
+.news-left, .news-right {
     border: 1px solid #ddd;
     padding: 0;
     float:left;
     display:inline;
 }
 .news-left h3,.news-left p, .news-right h3,.news-right p {
-  padding:0 10px;
-  }
+    padding:0 10px;
+}
+.tab-section .nav-tabs > li {
+    margin-right: 20px;
+}
+
+.tab-section .nav-tabs > li > a {
+    border: 1px solid #ddd;
+    border-bottom: 0;
+} 
