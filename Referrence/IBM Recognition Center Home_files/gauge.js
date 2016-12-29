@@ -1,13 +1,13 @@
 $(function () {
 
     // Uncomment to style it like Apple Watch
-    /*
+    
     if (!Highcharts.theme) {
         Highcharts.setOptions({
             chart: {
-                backgroundColor: 'black'
+                backgroundColor: 'white'
             },
-            colors: ['#F62366', '#9DFF02', '#0CCDD6'],
+            colors: ['#b32772', '#a0dfe8', '#8dba3f'],
             title: {
                 style: {
                     color: 'silver'
@@ -20,7 +20,7 @@ $(function () {
             }
         });
     }
-    // */
+    // 
 
     Highcharts.chart('container', {
 
@@ -86,7 +86,7 @@ $(function () {
                 dataLabels: {
                     enabled: false
                 },
-                linecap: 'round',
+                linecap: 'square',
                 stickyTracking: false
             }
         },
@@ -98,7 +98,7 @@ $(function () {
                 color: Highcharts.getOptions().colors[0],
                 radius: '100%',
                 innerRadius: '100%',
-                y: 80
+                y: 54
             }]
         }, {
             name: 'Business Unit',
@@ -107,7 +107,7 @@ $(function () {
                 color: Highcharts.getOptions().colors[1],
                 radius: '75%',
                 innerRadius: '75%',
-                y: 65
+                y: 71
             }]
         }, {
             name: 'IBM',
@@ -116,7 +116,7 @@ $(function () {
                 color: Highcharts.getOptions().colors[2],
                 radius: '50%',
                 innerRadius: '50%',
-                y: 50
+                y: 89
             }]
         }]
     },
