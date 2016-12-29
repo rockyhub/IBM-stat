@@ -335,3 +335,17 @@ text.highcharts-credits {
     border: 1px solid #ddd;
     border-bottom: 0;
 } 
+/*Mobile style starts*/
+@media (max-width: 768px) {
+  .alert-section, .budget-section, .tab-section, .celebrations-section, .news-section {
+    padding: 0;
+    margin:0;
+  }
+  .alert-section .task-div {
+    margin: 10px 0;
+  }
+  .mobile-space {
+    margin: 2%;
+  }
+}
+/*Mobile style ends*/
