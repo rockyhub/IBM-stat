@@ -347,5 +347,14 @@ text.highcharts-credits {
   .mobile-space {
     margin: 2%;
   }
+  .tab-section .tab-content {
+    height:auto;
+  }
+  .tab-section .nav-tabs > li {
+    width: 100%;
+  }
+  .view-all-btn {
+    padding-bottom:20px;
+  }
 }
 /*Mobile style ends*/
