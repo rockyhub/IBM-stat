@@ -5,7 +5,7 @@ $(function () {
     if (!Highcharts.theme) {
         Highcharts.setOptions({
             chart: {
-                backgroundColor: 'white'
+                backgroundColor: '#f5f5f5'
             },
             colors: ['#b32772', '#a0dfe8', '#8dba3f'],
             title: {
@@ -32,7 +32,8 @@ $(function () {
         title: {
             text: 'Usage Comparison',
             style: {
-                fontSize: '16px'
+                fontSize: '18px',
+                color:'#000'
             }
         },
 
@@ -56,18 +57,18 @@ $(function () {
             startAngle: 0,
             endAngle: 360,
             background: [{ // Track for Move
-                outerRadius: '112%',
-                innerRadius: '88%',
+                outerRadius: '0%',
+                innerRadius: '0%',
                 backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0.3).get(),
                 borderWidth: 0
             }, { // Track for Exercise
-                outerRadius: '87%',
-                innerRadius: '63%',
+                outerRadius: '0%',
+                innerRadius: '0%',
                 backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[1]).setOpacity(0.3).get(),
                 borderWidth: 0
             }, { // Track for Stand
-                outerRadius: '62%',
-                innerRadius: '38%',
+                outerRadius: '0%',
+                innerRadius: '0%',
                 backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[2]).setOpacity(0.3).get(),
                 borderWidth: 0
             }]
@@ -100,6 +101,7 @@ $(function () {
                 innerRadius: '100%',
                 y: 54
             }]
+            
         }, {
             name: 'Business Unit',
             borderColor: Highcharts.getOptions().colors[1],
@@ -127,7 +129,7 @@ $(function () {
     function callback() {
 
         // Move icon
-        this.renderer.path(['M', -8, 0, 'L', 8, 0, 'M', 0, -8, 'L', 8, 0, 0, 8])
+        this.renderer.path()
             .attr({
                 'stroke': '#303030',
                 'stroke-linecap': 'round',
@@ -139,7 +141,7 @@ $(function () {
             .add(this.series[2].group);
 
         // Exercise icon
-        this.renderer.path(['M', -8, 0, 'L', 8, 0, 'M', 0, -8, 'L', 8, 0, 0, 8, 'M', 8, -8, 'L', 16, 0, 8, 8])
+        this.renderer.path()
             .attr({
                 'stroke': '#303030',
                 'stroke-linecap': 'round',
@@ -151,7 +153,7 @@ $(function () {
             .add(this.series[2].group);
 
         // Stand icon
-        this.renderer.path(['M', 0, 8, 'L', 0, -8, 'M', -8, 0, 'L', 0, -8, 8, 0])
+        this.renderer.path()
             .attr({
                 'stroke': '#303030',
                 'stroke-linecap': 'round',
