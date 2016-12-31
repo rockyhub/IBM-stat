@@ -27,11 +27,16 @@
 <nav class="navbar">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
+      <div class="mobile-nav">
+        <ul>
+          <li><button type="button" class="navbar-toggle mobile-nav-btn" data-toggle="collapse" data-target="#myNavbar" style="margin-top: 20%;">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button></li>
+          <li><button type="button" class="navbar-toggle mobile-nav-btn" data-toggle="collapse" data-target="#right-nav"><span class="user-icon"></span><span class="badge hidden-xs">12</span></button></li>
+        </ul>
+      </div>
       <a class="navbar-brand" href="#"><svg 
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -39,7 +44,7 @@
         <image  x="0px" y="0px" width="82px" height="47px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAAAvCAAAAABV+8JYAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfgDBEOIwREn/KrAAACh0lEQVRIx+2WTUhUURiGnztzK3XKn8Qf/OkHE1GMSi3SCFpYCSaEZVmLaBMVRAvTRe6KFu0SCcJFBAbRKqQsWiRFm6BNBVEhBGFQpGQ62jjmyNfinHvPdZhbJhZU823mfb937nvPe77DmbGExa7AojsmLZOWSct/3NJO2J06a3BH8KIhWaVlVRbQ81o3djaqBzqdG60LJFGNeeyfv5z7uuoBEWlwmXrgpiuLWAnvSxk1OJOxODUbwjMeAkSmDE8cfPqSwacC3fFyc1XfoINrG4H3Pa52YQHBgUMmOOUiIuc8Af2CDxlcwId42S4cdoOyygIPXY3l+9vTFwFaA4akNAPhfmBJC/BMD710M8MPFEzbqxfqUwUA3zQpAnJFRF4BbBQRadOvrhA57wQSERHbb5Fcn8Yc294oLAUovgfkAxyr11rMbqhRaJnaFl/L2EwcmbmtSfomgFlHf1ryUaOgM6H5BnfKuiFu8Aog6zSQm+0G9x/PnSiwT4+n34yU/O0AvBgESt4CdgwKP0chpenHwdfHMLdKZcwIGeqjKATkFUyqlZe8i7lmvx489MQE79VXyjrJn8fEz0yYDact7FHebAXYnQ5sqI+qSLRPwgq1Yt+9HJlFHxdNgjnA7AiQmgFMfAUyU8IRwMoz31jYUd9mgks3QJ3MK/iJsGc8x8dhOUB2O5AKsCMAVNA6BOyCkxOQ/pPgC67EqwyvMfixXRcvH77cMqDQlYNc7aD2LpR/Up1RH8tgrcFpXqKqifKIQjmw5xZHgeovjvrnglcafN+un6Ot7DwARx4p0tUMD6/1AjXDqjPkYxlYa/DSoIdklpbtzwLydC8EbBkHKA79xuB/xx+YpOX/ZvkdemeJ4pZJHlcAAAAASUVORK5CYII=" />
         </svg></a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="collapse navbar-collapse pull-left" id="myNavbar">
       <ul class="nav navbar-nav">
         <li role="menuitem" aria-haspopup="true" aria-labelledby="menuLabelName8 " id="home.navmenu.user.participants.PARTICIPANTS">
         <a href="https://ibmrr.performnet.com/ibmrr/loginSuccess.do#" alt="Recognition Center" title="Recoginition Center" tabindex="8" onclick="selTab(&#39;home.navmenu.user.participants.PARTICIPANTS&#39;);"><span id="menuLabelName8">Recognition Center</span></a>
@@ -64,8 +69,11 @@
         <a href="https://ibmrr.performnet.com/ibmrr/ibmrrUserGuide.do" alt="User Guides" title="User Guides" tabindex="16" onclick="selTab(&#39;ibmrr.user.guide.TITLE&#39;);"><span id="menuLabelName16">User Guides</span></a>
         </li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="point-txt">12345</span><span>Blue Points</span><img src="img/bag-icon.png" alt="Image"/></a></li>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="right-nav">
+    <ul class="nav navbar-nav navbar-right">
+        <li class="hidden-xs"><a href="#"><span class="point-txt">12345</span><span>Blue Points</span><img src="img/bag-icon.png" alt="Image"/></a></li>
         <li>
           <div class="dropdown" style="min-height: 60px;">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="user-icon"></span><span class="badge">12</span>
@@ -78,18 +86,28 @@
           </div>
         </li>                         
       </ul>
-    </div>
+      </div>
   </div>
 </nav>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="MobileCarousel" class="visible-xs">
+  <div class="carousel-inner" role="listbox">
+  <div class="item active">
+    <img src="img/mobile-carousel-img.jpg" alt="Image">
+    <div class="carousel-caption">
+      <h3>How engaged are  your employees?</h3>
+      <p>Check out your manager dashboard</p>
+      <button>View Reports</button>
+    </div>      
+  </div>
+</div>
+  </div>
+<div id="myCarousel" class="carousel slide hidden-xs" data-ride="carousel">
     <!-- Indicators -->
-    
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
-
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
@@ -100,7 +118,6 @@
           <button>View Reports</button>
         </div>      
       </div>
-
       <div class="item">
         <img src="img/carousel-2.jpg" alt="Image">
         <div class="carousel-caption">
@@ -109,7 +126,6 @@
           <button>View Reports</button>
         </div>      
       </div>
-
       <div class="item">
         <img src="img/carousel-3.jpg" alt="Image">
         <div class="carousel-caption">
@@ -196,15 +212,109 @@
 
 <!-- Tab section starts -->
 <div class="row tab-section">
-  <h3 class="text-center col-xs-12">How Would You Like to Say Thanks?</h3>
-  <ul class="nav nav-tabs">
+  <h3 class="text-center">How Would You Like to Say Thanks?</h3>
+  <div class="visible-xs">
+    <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><span class="mobile-accordion-img"><img src="img/tab1-img.png"/></span><p>Cash Awards</p></a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body"><div class="items">
+        <div class="item col-md-6 col-xs-12">
+          <div class="col-md-2 col-xs-2"><img src="img/excellence_img.png"/></div>
+          <div class="col-md-8 col-xs-8">
+            <p>GBS Service Excellence Award </p>
+            <p>This copy block would include a brief description of the award.</p>
+          </div>
+          <div class="col-md-2 col-xs-2 Rt-Arrow"><img src="img/Rt-Arrow.png"/></div>
+        </div>
+        <div class="item col-md-6 col-xs-12">
+          <div class="col-md-2 col-xs-2"><img src="img/excellence_img.png"/></div>
+          <div class="col-md-8 col-xs-8">
+            <p>Systems Excellence Award</p>
+            <p>This copy block would include a brief description of the award.</p>
+          </div>
+          <div class="col-md-2 col-xs-2 Rt-Arrow"><img src="img/Rt-Arrow.png"/></div>
+        </div>
+        <div class="item col-md-6 col-xs-12">
+          <div class="col-md-2 col-xs-2"><img src="img/excellence_img.png"/></div>
+          <div class="col-md-8 col-xs-8">
+            <p>Software Teaming Accelerator Award </p>
+            <p>This copy block would include a brief description of the award.</p>
+          </div>
+          <div class="col-md-2 col-xs-2 Rt-Arrow"><img src="img/Rt-Arrow.png"/></div>
+        </div>
+        <div class="item col-md-6 col-xs-12">
+          <div class="col-md-2 col-xs-2"><img src="img/excellence_img2.png" style="width: 90px; height: 95px;"/></div>
+          <div class="col-md-8 col-xs-8">
+            <p>Systems Lab Services Award </p>
+            <p>This copy block would include a brief description of the award.</p>
+          </div>
+          <div class="col-md-2 col-xs-2 Rt-Arrow"><img src="img/Rt-Arrow.png"/></div>
+        </div>
+        <div class="item col-md-6 col-xs-12">
+          <div class="col-md-2 col-xs-2"><img src="img/excellence_img1.png"/></div>
+          <div class="col-md-8 col-xs-8">
+            <p>Eminence and Excellence Cash Award </p>
+            <p>This copy block would include a brief description of the award.</p>
+          </div>
+          <div class="col-md-2 col-xs-2 Rt-Arrow"><img src="img/Rt-Arrow.png"/></div>
+        </div>
+      </div>
+      
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><span class="mobile-accordion-img"><img src="img/tab1-img.png"/></span><p>BluePoint Awards</p></a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><span class="mobile-accordion-img"><img src="img/tab3-img.png"/></span><p>Appreciation</p></a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4"><span class="mobile-accordion-img"><img src="img/tab4-img.png"/></span><p>Everything Else</p></a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+    <div class="col-md-12 text-center view-all-btn"><button class="btn btn-custom btn-lg" onclick="">Or View Full List </button></div>
+  </div> 
+  </div>
+  <ul class="nav nav-tabs hidden-xs">
     <li class="active"><a data-toggle="tab" href="#home"><img src="img/tab1-img.png"/><p>Cash Awards</p><button class="btn btn-custom tabbtn hidden-xs">Viewing</button></a></li>
     <li><a data-toggle="tab" href="#menu1"><img src="img/tab1-img.png"/><p>BluePoint Awards</p><button class="btn btn-custom tabbtn hidden-xs">View Programs</button></a></li>
     <li><a data-toggle="tab" href="#menu2"><img src="img/tab3-img.png"/><p>Appreciation</p><button class="btn btn-custom tabbtn hidden-xs">View Programs</button></a></li>
     <li><a data-toggle="tab" href="#menu3"><img src="img/tab4-img.png"/><p>Everything Else</p><button class="btn btn-custom tabbtn hidden-xs">View Programs</button></a></li>
   </ul>
 
-  <div class="tab-content">
+  <div class="tab-content hidden-xs">
     <div id="home" class="tab-pane fade in active">
       <div class="items">
         <div class="item col-md-6 col-xs-12">
