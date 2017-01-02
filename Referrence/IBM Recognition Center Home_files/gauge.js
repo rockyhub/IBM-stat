@@ -54,8 +54,8 @@ $(function () {
         },
 
         pane: {
-            startAngle: 0,
-            endAngle: 360,
+            startAngle: -160,
+            endAngle: 160,
             background: [{ // Track for Move
                 outerRadius: '0%',
                 innerRadius: '0%',
@@ -83,9 +83,12 @@ $(function () {
 
         plotOptions: {
             solidgauge: {
-                borderWidth: '34px',
+                borderWidth: '14px',
                 dataLabels: {
-                    enabled: false
+                    enabled: true,
+                    y: 5,
+                    borderWidth: 0,
+                    useHTML: true
                 },
                 linecap: 'square',
                 stickyTracking: false
@@ -100,26 +103,35 @@ $(function () {
                 radius: '100%',
                 innerRadius: '100%',
                 y: 54
-            }]
+            }],
+            dataLabels:{
+                format: '<div>{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}%</span></div>',
+            }
             
         }, {
             name: 'Business Unit',
             borderColor: Highcharts.getOptions().colors[1],
             data: [{
                 color: Highcharts.getOptions().colors[1],
-                radius: '75%',
-                innerRadius: '75%',
+                radius: '90%',
+                innerRadius: '90%',
                 y: 71
-            }]
+            }],
+            dataLabels:{
+                format: '<div>{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}%</span></div>',
+            }
         }, {
             name: 'IBM',
             borderColor: Highcharts.getOptions().colors[2],
             data: [{
                 color: Highcharts.getOptions().colors[2],
-                radius: '50%',
-                innerRadius: '50%',
+                radius: '80%',
+                innerRadius: '80%',
                 y: 89
-            }]
+            }],
+            dataLabels:{
+                format: '<div>{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}%</span></div>',
+            }
         }]
     },
 
