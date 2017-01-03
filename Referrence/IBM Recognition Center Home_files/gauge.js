@@ -37,21 +37,7 @@ $(function () {
             }
         },
 
-        tooltip: {
-            borderWidth: 0,
-            backgroundColor: 'none',
-            shadow: false,
-            style: {
-                fontSize: '16px'
-            },
-            pointFormat: '{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}%</span>',
-            positioner: function (labelWidth) {
-                return {
-                    x: 200 - labelWidth / 2,
-                    y: 180
-                };
-            }
-        },
+        tooltip: false,
 
         pane: {
             startAngle: -160,
@@ -105,7 +91,7 @@ $(function () {
                 y: 54
             }],
             dataLabels:{
-                format: '<div>{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}%</span></div>',
+                format: '<div class="test">Team<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}%</span></div>',
             }
             
         }, {
@@ -118,7 +104,7 @@ $(function () {
                 y: 71
             }],
             dataLabels:{
-                format: '<div>{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}%</span></div>',
+                format: '<div class="test">Business Unit<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}%</span></div>',
             }
         }, {
             name: 'IBM',
@@ -130,7 +116,7 @@ $(function () {
                 y: 89
             }],
             dataLabels:{
-                format: '<div>{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}%</span></div>',
+                format: '<div class="test">IBM<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}%</span></div>',
             }
         }]
     },
