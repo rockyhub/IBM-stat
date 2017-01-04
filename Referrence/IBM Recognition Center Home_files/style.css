@@ -33,7 +33,9 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
 }
-
+.inline-block {
+  display: inline-block;
+}
 .navbar {
     display: inline-block;
     width: 100%;
@@ -254,6 +256,9 @@ footer .footer-nav {
   background-color: #1d3649;
   color: #fff;
 }
+.celebrations-section .col-md-2, .celebrations-section .col-md-10, .tab-section .col-md-2{
+  padding: 0px;
+}
 .celebrations-section .nav-tabs li a {
   color: #fff;
 }
@@ -341,86 +346,6 @@ text.highcharts-credits {
 .mobile-nav {
     float: left;
   }
-/*Mobile style starts*/
-@media (max-width: 768px) {
-  .alert-section, .budget-section, .tab-section, .celebrations-section, .news-section {
-    padding: 0;
-    margin:0;
-  }
-  .alert-section .task-div {
-    margin: 10px 0;
-  }
-  .mobile-space {
-    margin: 2%;
-    width:96%;
-  }
-  .tab-section .tab-content {
-    height:auto;
-  }
-  .tab-section .nav-tabs > li {
-    width: 100%;
-  }
-  .view-all-btn {
-    padding-bottom:20px;
-  }
-  .celebrations-section .nav-tabs > li {
-    width:33.333%;
-    text-align: center;
-  }
-  .celebrations-section .nav-tabs > li:first-child  {
-    text-align: left;
-  }
-  .celebrations-section .nav-tabs > li:last-child  {
-    text-align: right;
-  }
-  .mobile-nav-btn {
-    margin: 0;
-    padding: 5px;
-  }
-  .navbar-header div ul {
-    float: right;
-    border-left: 1px solid #ddd;
-    max-height: 50px;
-  }
-  .navbar-header .navbar ul li {
-    width: 40%;
-    float: right;
-  }
-  .mobile-nav {
-    float: right;
-  }
-  .carousel-caption {
-    display: block;
-    width: 100%;
-  }
-  .budget-section {
-    padding: 20px 10px;
-  }
-  .tab-section .panel-group .panel + .panel {
-    margin-top: 0;
-  }
-  .tab-section .panel-default > .panel-heading {
-    background-color: transparent;
-  }
-  .tab-section .panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group {
-    border-top:0;
-  }
-  .tab-section .panel-body {
-    padding: 0;
-  }
-  /*.tab-section .mobile-accordion-img {
-    display: inline-block;
-  }
-  .tab-section .panel-title > a {
-    display: block;
-  }
-  .tab-section .panel-heading .panel-title p {
-    float: right;
-    font-size: 30px;
-    margin-top: 10%;
-    padding-right: 5%;
-    text-align: left;
-    display: inline-block;
-  }*/
+.Rt-Arrow {
+    margin-top: 5%;
 }
-/*Mobile style ends*/
