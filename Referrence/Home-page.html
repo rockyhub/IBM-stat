@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./IBM Recognition Center Home_files/style.css" type="text/css">
   <link rel="stylesheet" href="./IBM Recognition Center Home_files/mobile-styles.css" type="text/css">
-  <script src="./IBM Recognition Center Home_files/jquery-3.1.1.js"></script>
+  <script src="./IBM Recognition Center Home_files/jquery-3.1.1.min.js"></script>
   <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
   <script src="./IBM Recognition Center Home_files/bootstrap.js"></script>
   <script src="./IBM Recognition Center Home_files/gauge/highcharts.js"></script>
@@ -105,11 +105,11 @@
 </section>
 <section id="myCarousel" class="carousel slide hidden-xs" data-ride="carousel">
     <!-- Indicators -->
-    <ol class="carousel-indicators">
+    <!-- <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+    </ol> -->
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
@@ -120,7 +120,7 @@
           <button>View Reports</button>
         </div>      
       </div>
-      <div class="item">
+      <!-- <div class="item">
         <img src="img/carousel-2.jpg" alt="Image">
         <div class="carousel-caption">
           <h3>How engaged are  your employees?</h3>
@@ -135,7 +135,7 @@
           <p>Check out your manager dashboard</p>
           <button>View Reports</button>
         </div>      
-      </div>
+      </div> -->
       <div class="anchor hidden-xs hidden-sm">
         <ul>
           <li><a href="#" alt="User Guides" title="User Guides" onclick="alert('')"><img src="img/down-arr-icon.png" alt="Image"><span>Pending Tasks</span></a></li>
@@ -147,7 +147,7 @@
     </div>
 
     <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
@@ -155,37 +155,39 @@
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
+    </a>-->
 </section>
   <!-- alert section starts -->
+  
 <section class="row alert-section">    
   <div>
-    <div class="col-sm-4 col-xs-12 task-div">
-      <div class="col-sm-5 col-xs-3"><img src="img/alert.png" class="img-responsive" alt="Image"/>
+    <div class="col-xs-12 task-div task-count">
+      <div class="col-xs-3"><img src="img/alert.png" class="img-responsive" alt="Image"/>
       </div>
-      <div class="col-sm-7 col-xs-9">
+      <div class="col-xs-9">
         <p><span class="pending-count">3</span>pending tasks</p>
-        <p><a href="#">See all pending tasks <span style="padding-left: 5px;"><img src="img/right-arrow.png"  class="img-responsive"  alt="icon-bar"><span></a></p>
+        <p><a href="#">See all pending tasks <span style="padding-left: 5px;"><img src="img/right-arrow.png" alt="icon-bar"><span></a></p>
       </div>
     </div>
-    <div class="col-sm-2 col-xs-12 task-div"> 
+    <div class="col-xs-12 task-div"> 
       <p><b>1 day left</b></p>
       <p>Take a quiz!</p>
       <button class="btn btn-custom col-xs-12" onclick="">Take Quiz</button>
     </div>
-    <div class="col-sm-2 col-xs-12 task-div "> 
+    <div class="col-xs-12 task-div "> 
       <p><b>2 days left</b></p>
       <p>Approve budget</p>
       <button class="btn btn-custom col-xs-12" onclick="">Go To Budgets</button>
     </div>
-    <div class="col-sm-2 col-xs-12 task-div"> 
+    <div class="col-xs-12 task-div"> 
       <p><b>2 days left</b></p>
       <p>Review your patent</p>
       <button class="btn btn-custom col-xs-12" onclick="">Review Patents</button>
     </div>
   </div>
 </section>
-<!-- budget section ends -->
-
+<!-- alert section ends -->
+<main>
 <!-- budget section starts -->
 <section class="row budget-section">
   <div class="dropdown">
@@ -228,7 +230,7 @@
         <div class="item col-md-6 col-xs-12">
           <div class="col-md-2 col-xs-2"><img src="img/excellence_img.png"  class="img-responsive"/></div>
           <div class="col-md-8 col-xs-8">
-            <p>GBS Service Excellence Award </p>
+            <h3>GBS Service Excellence Award </h3>
             <p>This copy block would include a brief description of the award.</p>
           </div>
           <div class="col-md-2 col-xs-2 Rt-Arrow"><img src="img/Rt-Arrow.png"  class="img-responsive"/></div>
@@ -236,7 +238,7 @@
         <div class="item col-md-6 col-xs-12">
           <div class="col-md-2 col-xs-2"><img src="img/excellence_img.png"  class="img-responsive"/></div>
           <div class="col-md-8 col-xs-8">
-            <p>Systems Excellence Award</p>
+            <h3>Systems Excellence Award</h3>
             <p>This copy block would include a brief description of the award.</p>
           </div>
           <div class="col-md-2 col-xs-2 Rt-Arrow"><img src="img/Rt-Arrow.png"  class="img-responsive"/></div>
@@ -244,7 +246,7 @@
         <div class="item col-md-6 col-xs-12">
           <div class="col-md-2 col-xs-2"><img src="img/excellence_img.png"  class="img-responsive"/></div>
           <div class="col-md-8 col-xs-8">
-            <p>Software Teaming Accelerator Award </p>
+            <h3>Software Teaming Accelerator Award </h3>
             <p>This copy block would include a brief description of the award.</p>
           </div>
           <div class="col-md-2 col-xs-2 Rt-Arrow"><img src="img/Rt-Arrow.png"  class="img-responsive"/></div>
@@ -252,7 +254,7 @@
         <div class="item col-md-6 col-xs-12">
           <div class="col-md-2 col-xs-2"><img src="img/excellence_img2.png" style="width: 90px; height: 95px;"  class="img-responsive"/></div>
           <div class="col-md-8 col-xs-8">
-            <p>Systems Lab Services Award </p>
+            <h3>Systems Lab Services Award </h3>
             <p>This copy block would include a brief description of the award.</p>
           </div>
           <div class="col-md-2 col-xs-2 Rt-Arrow"><img src="img/Rt-Arrow.png"  class="img-responsive"/></div>
@@ -260,7 +262,7 @@
         <div class="item col-md-6 col-xs-12">
           <div class="col-md-2 col-xs-2"><img src="img/excellence_img1.png"  class="img-responsive"/></div>
           <div class="col-md-8 col-xs-8">
-            <p>Eminence and Excellence Cash Award </p>
+            <h3>Eminence and Excellence Cash Award </h3>
             <p>This copy block would include a brief description of the award.</p>
           </div>
           <div class="col-md-2 col-xs-2 Rt-Arrow"><img src="img/Rt-Arrow.png"  class="img-responsive"/></div>
@@ -310,10 +312,10 @@
   </div> 
   </div>
   <ul class="nav nav-tabs hidden-xs">
-    <li class="active"><a data-toggle="tab" href="#home"><img src="img/tab1-img.png"  class="img-responsive"/><p>Cash Awards</p><button class="btn btn-custom tabbtn hidden-xs">Viewing</button></a></li>
-    <li><a data-toggle="tab" href="#menu1"><img src="img/BP.png"  class="img-responsive"/><p>BluePoint Awards</p><button class="btn btn-custom tabbtn hidden-xs">View Programs</button></a></li>
-    <li><a data-toggle="tab" href="#menu2"><img src="img/Vector-Smart-Object.png"  class="img-responsive"/><p>Appreciation</p><button class="btn btn-custom tabbtn hidden-xs">View Programs</button></a></li>
-    <li><a data-toggle="tab" href="#menu3"><img src="img/tab4-img.png"  class="img-responsive"/><p>Everything Else</p><button class="btn btn-custom tabbtn hidden-xs">View Programs</button></a></li>
+    <li class="active"><a data-toggle="tab" href="#home"><span class="tab-icons"><i class="fa fa-usd fa-5x" aria-hidden="true"></i></span><p>Cash Awards</p><button class="btn btn-custom tabbtn hidden-xs">Viewing</button></a></li>
+    <li><a data-toggle="tab" href="#menu1"><span class="tab-icons bp-icon">BP</span><p>BluePoint Awards</p><button class="btn btn-custom tabbtn hidden-xs">View Programs</button></a></li>
+    <li><a data-toggle="tab" href="#menu2"><span class="tab-icons heart-icon"><i class="fa fa-heart-o fa-5x" aria-hidden="true"></i></span><p>Appreciation</p><button class="btn btn-custom tabbtn hidden-xs">View Programs</button></a></li>
+    <li><a data-toggle="tab" href="#menu3"><div style="padding: 23% 0;"><span class="square"><i class="fa fa-square-o fa-3x" aria-hidden="true"></i></span><span class="square"><i class="fa fa-square-o fa-3x" aria-hidden="true"></i></span><span class="square"><i class="fa fa-square-o fa-3x" aria-hidden="true"></i></span></div><p>Everything Else</p><button class="btn btn-custom tabbtn hidden-xs">View Programs</button></a></li>
   </ul>
 
   <div class="tab-content hidden-xs">
@@ -483,6 +485,7 @@
       </div>
   </div>
 </section>
+</main>
 <br>
 
 <footer>
