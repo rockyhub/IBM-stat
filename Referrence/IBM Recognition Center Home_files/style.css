@@ -34,9 +34,9 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 main {
-    width: 960px;
+    width: 100%;
     display: inline-block;
-    margin: auto 19.6%;
+    box-sizing: border-box;
 }
 .inline-block {
   display: inline-block;
@@ -181,10 +181,11 @@ footer .footer-nav {
   background-color: #b5b5b5;
 }
 .alert-section {
+  width:100%;
   background-color: #2dafe5;
   padding: 20px 19.7%;
   color: #fff;
-  margin-bottom: 0 !important;
+  margin: 0 !important;
 }
 
 .alert-section p a {
@@ -206,6 +207,9 @@ footer .footer-nav {
   font-size: 18px;
   background-color: #f5f5f5;
   padding-top: 20px;
+  width: 100%;
+  padding: 20px 19%;
+  margin: 0;
 }
 .budget-section .dropdown a {
   color: #000;
@@ -253,9 +257,9 @@ footer .footer-nav {
   padding: 10px;
 }
 .alert-section, .budget-section, .tab-section, .celebrations-section, .news-section {
-  /*padding-left: 15%;
-  padding-right: 15%;*/
   margin-bottom: 20px;
+  padding: 10px 20%;
+  width: 100%;
 }
 .celebrations-section {
   background-color: #1d3649;
@@ -285,23 +289,20 @@ footer .footer-nav {
     border: 0;
     min-height: 300px;
 }
-.celebrations-section p, .tab-section p  {
+.celebrations-section p, .celebrations-section h5 {
     margin: 0;
     padding-left: 10px;
 }
-.celebrations-section p:first-child, .tab-section p:first-child {
+/*.celebrations-section p:first-child, .tab-section p:first-child {
     font-weight: bold;
-}
+}*/
 .celebrations-section .tab-content .btn-custom {
     background-color: transparent;
     border: 1px solid #fff;
 }
-.tab-section .tab-content p  {
+/*.tab-section .tab-content p  {
     padding-left: 3%;
-}
-.tab-section p:first-child {
-    padding-top: 8%;
-}
+}*/
 .right-arrow {
     padding-top: 5%;
 }
@@ -341,8 +342,8 @@ text.highcharts-credits {
     padding:0 10px;
 }
 .tab-section .nav-tabs > li {
-    margin-right: 5%;
-    padding: 10px 2.6%;
+    margin-right: 2%;
+    padding: 10px 2%;
     border: 1px solid #ddd;
 }
 .tab-section .nav-tabs > li.active {
@@ -410,4 +411,13 @@ text.highcharts-credits {
 }
 .task-count {
   width: 40%;
+}
+.tab-section .tab-content ul, .celebrations-section .tab-content ul, .tab-section .panel-body ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.tab-section h5, .celebrations-section h5 {
+  font-weight: bold;
+  margin:0px;
 }
