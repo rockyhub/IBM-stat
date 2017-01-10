@@ -26,7 +26,7 @@
   <script src="./referrence/gauge.js"></script>
 </head>
 <body>
-<nav class="navbar">
+<nav class="navbar" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
       <div class="mobile-nav">
@@ -80,7 +80,7 @@
           <div class="dropdown" style="min-height: 60px;">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="user-icon"></span><span class="badge">12</span>
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" aria-labelledby="dropdown">
               <li><a href="#">My Account</a></li>
               <li><a href="#">Pending Tasks <span class="badge">12</span></a></li>
               <li><a href="#">Sign Out</a></li>
@@ -91,7 +91,7 @@
       </div>
   </div>
 </nav>
-<section id="MobileCarousel" class="visible-xs">
+<section role="section" id="MobileCarousel" class="visible-xs">
   <div class="carousel-inner" role="listbox">
     <div class="item active">
       <img  class="img-responsive" src="img/mobile-carousel-img.jpg" alt="Image">
@@ -103,7 +103,7 @@
     </div>
   </div>
 </section>
-<section id="myCarousel" class="carousel slide hidden-xs" data-ride="carousel">
+<section id="myCarousel" role="section" class="carousel slide hidden-xs" data-ride="carousel">
     <!-- Indicators -->
     <!-- <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -157,10 +157,10 @@
     </a>
     </a>-->
 </section>
-<main>
+<main role="main">
   <!-- alert section starts -->
   
-<section class="row alert-section">    
+<section class="row alert-section" role="section">    
   <div>
     <div class="col-xs-12 task-div task-count">
       <div class="col-xs-3"><img src="img/alert.png" class="img-responsive" alt="Image"/>
@@ -190,7 +190,7 @@
 <!-- alert section ends -->
 
 <!-- budget section starts -->
-<section class="row budget-section">
+<section class="row budget-section" role="section">
   <div class="dropdown">
     <a href="#" class="dropdown-toggle" type="button" data-toggle="dropdown">2016 Manager Discretionary Budget <span><img src="img/drop-down-icon.png"/></span></a>
     <ul class="dropdown-menu">
@@ -216,17 +216,17 @@
 <!-- budget section ends -->
 
 <!-- Tab section starts -->
-<section class="row tab-section">
+<section class="row tab-section" role="section">
   <h3 class="text-center">How Would You Like to Say Thanks?</h3>
   <div class="visible-xs">
-    <div class="panel-group" id="accordion">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
     <div class="panel panel-default">
-      <div class="panel-heading">
+      <div class="panel-heading" role="tab" id="headingOne">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><span class="mobile-accordion-img"><img src="img/tab1-img.png"  class="img-responsive"/></span><p>Cash Awards</p></a>
+          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1"><span class="mobile-accordion-img"><img src="img/tab1-img.png"  class="img-responsive"/></span><p>Cash Awards</p></a>
         </h4>
       </div>
-      <div id="collapse1" class="panel-collapse collapse in">
+      <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
         <div class="panel-body">
           <ul class="items">
           <li class="item col-md-6 col-xs-12">
@@ -273,25 +273,25 @@
         </div>
       </div>
     </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
+    <div class="panel panel-default" role="tab">
+      <div class="panel-heading" id="headingTwo">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><span class="mobile-accordion-img"><img src="img/BP.png"  class="img-responsive"/></span><p>BluePoint Awards</p></a>
+          <a data-toggle="collapse" role="button" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2"><span class="mobile-accordion-img"><img src="img/BP.png"  class="img-responsive"/></span><p>BluePoint Awards</p></a>
         </h4>
       </div>
-      <div id="collapse2" class="panel-collapse collapse">
+      <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
         <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
       </div>
     </div>
     <div class="panel panel-default">
-      <div class="panel-heading">
+      <div class="panel-heading" role="tab" id="headingThree">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><span class="mobile-accordion-img"><img src="img/Vector-Smart-Object.png"   class="img-responsive"/></span><p>Appreciation</p></a>
+          <a role="button"  data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3"><span class="mobile-accordion-img"><img src="img/Vector-Smart-Object.png"   class="img-responsive"/></span><p>Appreciation</p></a>
         </h4>
       </div>
-      <div id="collapse3" class="panel-collapse collapse">
+      <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
         <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
@@ -312,15 +312,15 @@
     <div class="col-md-12 text-center view-all-btn"><button class="btn btn-custom btn-lg" onclick="">Or View Full List </button></div>
   </div> 
   </div>
-  <ul class="nav nav-tabs hidden-xs">
-    <li class="active"><a data-toggle="tab" href="#home"><span class="tab-icons"><i class="fa fa-usd fa-5x" aria-hidden="true"></i></span><p>Cash Awards</p><button class="btn btn-custom tabbtn hidden-xs">Viewing</button></a></li>
-    <li><a data-toggle="tab" href="#menu1"><span class="tab-icons bp-icon">BP</span><p>BluePoint Awards</p><button class="btn btn-custom tabbtn hidden-xs">View Programs</button></a></li>
-    <li><a data-toggle="tab" href="#menu2"><span class="tab-icons heart-icon"><i class="fa fa-heart-o fa-5x" aria-hidden="true"></i></span><p>Appreciation</p><button class="btn btn-custom tabbtn hidden-xs">View Programs</button></a></li>
-    <li><a data-toggle="tab" href="#menu3"><div style="padding: 23% 0;"><span class="square"><i class="fa fa-square-o fa-3x" aria-hidden="true"></i></span><span class="square"><i class="fa fa-square-o fa-3x" aria-hidden="true"></i></span><span class="square"><i class="fa fa-square-o fa-3x" aria-hidden="true"></i></span></div><p>Everything Else</p><button class="btn btn-custom tabbtn hidden-xs">View Programs</button></a></li>
+  <ul class="nav nav-tabs hidden-xs" role="tablist">
+    <li role="presentation" class="active"><a aria-controls="home" role="tab" data-toggle="tab" href="#home"><span class="tab-icons"><i class="fa fa-usd fa-5x" aria-hidden="true"></i></span><p>Cash Awards</p><button class="btn btn-custom tabbtn hidden-xs">Viewing</button></a></li>
+    <li role="presentation" ><a aria-controls="menu1" role="tab" data-toggle="tab" href="#menu1"><span class="tab-icons bp-icon">BP</span><p>BluePoint Awards</p><button class="btn btn-custom tabbtn hidden-xs">View Programs</button></a></li>
+    <li role="presentation" ><a aria-controls="menu2" role="tab" data-toggle="tab" href="#menu2"><span class="tab-icons heart-icon"><i class="fa fa-heart-o fa-5x" aria-hidden="true"></i></span><p>Appreciation</p><button class="btn btn-custom tabbtn hidden-xs">View Programs</button></a></li>
+    <li role="presentation" ><a aria-controls="menu3" role="tab" data-toggle="tab" href="#menu3"><div style="padding: 23% 0;"><span class="square"><i class="fa fa-square-o fa-3x" aria-hidden="true"></i></span><span class="square"><i class="fa fa-square-o fa-3x" aria-hidden="true"></i></span><span class="square"><i class="fa fa-square-o fa-3x" aria-hidden="true"></i></span></div><p>Everything Else</p><button class="btn btn-custom tabbtn hidden-xs">View Programs</button></a></li>
   </ul>
 
   <div class="tab-content hidden-xs">
-    <div id="home" class="tab-pane fade in active">
+    <div role="tabpanel" id="home" class="tab-pane in active">
       <ul class="items">
         <li class="item col-md-6 col-xs-12">
           <div class="col-md-2 col-xs-2"><img src="img/excellence_img.png"  class="img-responsive"/></div>
@@ -365,28 +365,28 @@
       </ul>
       <div class="col-md-12 text-center view-all-btn"><button class="btn btn-custom btn-lg" onclick="">Or View Full List </button></div>
     </div>
-    <div id="menu1" class="tab-pane fade">
+    <div role="tabpanel" id="menu1" class="tab-pane">
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-    <div id="menu2" class="tab-pane fade">
+    <div role="tabpanel" id="menu2" class="tab-pane">
       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
     </div>
-    <div id="menu3" class="tab-pane fade">
+    <div role="tabpanel" id="menu3" class="tab-pane">
       <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabof.</p>
     </div>
   </div>
 </section>
 <!-- Tab section ends -->
 <!-- Upcoming Celebrations section starts -->
-<section class="row celebrations-section">
+<section class="row celebrations-section" role="section">
   <h3 class="text-center">Upcoming Celebrations!</h3>
-  <ul class="nav nav-tabs">
-    <li class="active "><a data-toggle="tab" href="#team">Team</a></li>
-    <li><a data-toggle="tab" href="#bu">BU</a></li>
-    <li><a data-toggle="tab" href="#country">Country</a></li>
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active "><a  aria-controls="team" role="tab" data-toggle="tab" href="#team">Team</a></li>
+    <li role="presentation" ><a  aria-controls="bu" role="tab" data-toggle="tab" href="#bu">BU</a></li>
+    <li role="presentation" ><a  aria-controls="country" role="tab" data-toggle="tab" href="#country">Country</a></li>
   </ul>
   <div class="tab-content">
-    <div id="team" class="tab-pane fade in active">
+    <div role="tabpanel" id="team" class="tab-pane in active">
       <ul class="items col-md-12">
         <li class="item col-md-4 col-xs-12">
           <div class="col-md-2 col-xs-2"><img src="img/team-member-1.png"  class="img-responsive"/></div>
@@ -454,20 +454,20 @@
       </ul>
       <div class="col-md-12 text-center view-all-btn" style="padding-top:20px;"><button class="btn btn-custom btn-lg" onclick="">View More Celebrations </button></div>
     </div>
-    <div id="bu" class="tab-pane fade">
+    <div role="tabpanel" id="bu" class="tab-pane">
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-    <div id="country" class="tab-pane fade">
+    <div role="tabpanel" id="country" class="tab-pane">
       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
     </div>
-    <div id="menu3" class="tab-pane fade">
+    <div role="tabpanel" id="menu3" class="tab-pane">
       <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabof.</p>
     </div>
   </div>
 </section>
 
 <!-- Upcoming Celebrations section ends -->
-<section class="row news-section">
+<section class="row news-section" role="section">
 
   <div class="col-md-6">
     <div class="news-left">
@@ -489,7 +489,7 @@
 </main>
 <br>
 
-<footer>
+<footer role="contentinfo">
   <div class="col-md-8">
     <p>© 2016 BI WORLDWIDE ® The transactions on this Recognition web site, with exception of cash Rewards, are conducted by BI WORLDWIDE.</p>
   </div>
