@@ -422,3 +422,50 @@ text.highcharts-credits {
   font-weight: bold;
   margin:0px;
 }
+.guage-numbers {
+  width: 40%;
+  position: absolute;
+  left: 30%;
+  top: 90%;
+  font-weight: bold;
+}
+.guage-max {
+  padding-left: 50%;
+}
+.guage-details-team, .guage-details-bu, .guage-details-ibm {
+    width: 100%;
+    top: 25%;
+    left: 75%;
+    position: absolute;
+    font-weight: bold;
+    font-size: 25px;
+}
+.guage-details-bu {
+    top: 35%;
+    
+}
+.guage-details-ibm {
+    top: 45%;
+    
+}
+.guage-details-team .guage-team {
+  color: #b32772;
+}
+.guage-details-bu .guage-bu {
+  color: #a0dfe8;
+}
+.guage-details-ibm .guage-ibm {
+  color: #8dba3f;
+}
+.guage-details-team  .guage-label{
+  color: #b32772;
+  font-size: 10px;
+}
+.guage-details-bu .guage-label {
+  color: #a0dfe8;
+  font-size: 10px;
+}
+.guage-details-ibm .guage-label {
+  color: #8dba3f;
+  font-size: 10px;
+}
