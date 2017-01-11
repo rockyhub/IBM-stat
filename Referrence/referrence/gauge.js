@@ -71,7 +71,7 @@ $(function () {
             solidgauge: {
                 borderWidth: '14px',
                 dataLabels: {
-                    enabled: true,
+                    enabled: false,
                     y: 5,
                     borderWidth: 0,
                     useHTML: true

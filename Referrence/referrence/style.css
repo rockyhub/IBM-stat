@@ -83,9 +83,9 @@ main {
 }
 .carousel-caption {
 	right: 65%;
-    left: 20%;
-    top: 20%;
-    text-align: left;
+  left: 20%;
+  top: 20%;
+  text-align: left;
 }
 .carousel-caption p {
 	z-index: 345;
@@ -208,6 +208,7 @@ footer .footer-nav {
   font-size: 18px;
   background-color: #f5f5f5;
   padding-top: 20px;
+  padding-left: 80px;
   width: 100%;
   padding: 20px 19%;
   margin: 0;
@@ -426,12 +427,12 @@ text.highcharts-credits {
 .guage-numbers {
   width: 40%;
   position: absolute;
-  left: 30%;
-  top: 90%;
+  left: 26%;
+  top: 82%;
   font-weight: bold;
 }
 .guage-max {
-  padding-left: 50%;
+  padding-left: 31%;
 }
 .guage-details-team, .guage-details-bu, .guage-details-ibm {
     width: 100%;
