@@ -7,7 +7,7 @@ $(function () {
             chart: {
                 backgroundColor: '#f5f5f5'
             },
-            colors: ['#b32772', '#a0dfe8', '#8dba3f'],
+            colors: ['#b32772', '#a0dfe8', '#8dba3f', '#fff'],
             title: {
                 style: {
                     color: 'silver'
@@ -43,19 +43,19 @@ $(function () {
             startAngle: -160,
             endAngle: 160,
             background: [{ // Track for Move
-                outerRadius: '0%',
-                innerRadius: '0%',
-                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0.3).get(),
+                outerRadius: '110%',
+                innerRadius: '100%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[3]).get(),
                 borderWidth: 0
             }, { // Track for Exercise
-                outerRadius: '0%',
-                innerRadius: '0%',
-                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[1]).setOpacity(0.3).get(),
+                outerRadius: '100%',
+                innerRadius: '90%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[3]).get(),
                 borderWidth: 0
             }, { // Track for Stand
-                outerRadius: '0%',
-                innerRadius: '0%',
-                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[2]).setOpacity(0.3).get(),
+                outerRadius: '90%',
+                innerRadius: '70%',
+                backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[3]).get(),
                 borderWidth: 0
             }]
         },

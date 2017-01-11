@@ -473,6 +473,9 @@ text.highcharts-credits {
 }
 .guage-details-ibm .guage-date{
   font-size: 12pt;
-  font-family: "Arial-regular";
   padding-top: 10%;
+  font-weight: normal;
+}
+.guage-date span {
+  padding-right: 10px;
 }
