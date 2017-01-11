@@ -427,8 +427,8 @@ text.highcharts-credits {
 .guage-numbers {
   width: 40%;
   position: absolute;
-  left: 26%;
-  top: 82%;
+  left: 28%;
+  top: 91%;
   font-weight: bold;
 }
 .guage-max {
@@ -470,4 +470,9 @@ text.highcharts-credits {
 .guage-details-ibm .guage-label {
   color: #8dba3f;
   font-size: 10px;
+}
+.guage-details-ibm .guage-date{
+  font-size: 12pt;
+  font-family: "Arial-regular";
+  padding-top: 10%;
 }
