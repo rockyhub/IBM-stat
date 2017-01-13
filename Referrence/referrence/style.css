@@ -427,6 +427,7 @@ text.highcharts-credits {
   font-weight: bold;
   margin:0px;
 }
+<<<<<<< HEAD
 .guage-numbers {
   width: 40%;
   position: absolute;
@@ -492,3 +493,5 @@ text.highcharts-credits {
 li.dropdown:hover > .dropdown-menu {
     display: block;
 }
+=======
+>>>>>>> parent of ec33a30... guage changes
