@@ -24,6 +24,7 @@
   <script src="./referrence/gauge/highcharts-more.js"></script>
   <script src="./referrence/gauge/solid-gauge.js"></script>
   <script src="./referrence/gauge.js"></script>
+   <script src="./referrence/script.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-default navbar-static-top" role="navigation">
@@ -123,7 +124,32 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdown">
               <li><a href="#">My Account</a></li>
-              <li><a href="#">Pending Tasks <span class="badge">12</span></a></li>
+              <li>
+                <div class="panel-group menu-accordion">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="menuPendingTaskList">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapsePendingTasks">Pending Tasks <i class="more-less glyphicon glyphicon-plus"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapsePendingTasks" class="panel-collapse collapse" role="tabpanel" aria-labelledby="menuPendingTaskList">
+                      <div class="panel-body">
+                        <div class="item"> 
+                          <p><b>1 day left</b></p>
+                          <p>Take a quiz!</p>
+                          <button class="btn btn-custom col-xs-12" onclick="">Take Quiz</button>
+                        </div>
+                        <div class="item"> 
+                          <p><b>1 day left</b></p>
+                          <p>Take a quiz!</p>
+                          <button class="btn btn-custom col-xs-12" onclick="">Take Quiz</button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
               <li><a href="#">Sign Out</a></li>
             </ul>
           <!-- </div> -->
@@ -204,14 +230,43 @@
 <section class="row alert-section" role="section">    
   <div>
     <div class="col-xs-12 task-div task-count">
-      <div class="col-xs-3"><img src="img/alert.png" class="img-responsive" alt="Image"/>
+      <div class="col-xs-3 peding-task-img"><img src="img/alert.png" class="img-responsive" alt="Image"/>
       </div>
-      <div class="col-xs-9">
-        <p><span class="pending-count">3</span>pending tasks</p>
-        <p><a href="#">See all pending tasks <span style="padding-left: 5px;"><img src="img/right-arrow.png" alt="icon-bar"><span></a></p>
+      <div class="col-xs-9 peding-task-number">
+        <h3 class="pending-count">4</h3>
+        <p style="font-size:13px">pending tasks</p>
+        <!-- <p><a href="#">See all pending tasks <span style="padding-left: 5px;"><img src="img/right-arrow.png" alt="icon-bar"><span></a></p> -->
       </div>
     </div>
-    <div class="col-xs-12 task-div"> 
+    <div id="pendingTasksCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="col-xs-12 task-div"> 
+            <p><b>1 day left</b></p>
+            <p>Take a quiz!</p>
+            <button class="btn btn-custom col-xs-12" onclick="">Take Quiz</button>
+          </div>
+        </div>
+        <div class="item">
+          <div class="col-xs-12 task-div "> 
+            <p><b>2 days left</b></p>
+            <p>Approve budget</p>
+            <button class="btn btn-custom col-xs-12" onclick="">Go To Budgets</button>
+          </div>
+        </div>
+        <div class="item">
+          <div class="col-xs-12 task-div"> 
+            <p><b>3 days left</b></p>
+            <p>Review your patent</p>
+            <button class="btn btn-custom col-xs-12" onclick="">Review Patents</button>
+          </div>
+        </div>
+          
+      </div>
+      <a class="left carousel-control" href="#pendingTasksCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+          <a class="right carousel-control" href="#pendingTasksCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+    </div>         
+    <!-- <div class="col-xs-12 task-div"> 
       <p><b>1 day left</b></p>
       <p>Take a quiz!</p>
       <button class="btn btn-custom col-xs-12" onclick="">Take Quiz</button>
@@ -225,7 +280,7 @@
       <p><b>2 days left</b></p>
       <p>Review your patent</p>
       <button class="btn btn-custom col-xs-12" onclick="">Review Patents</button>
-    </div>
+    </div> -->
   </div>
 </section>
 <!-- alert section ends -->
@@ -248,15 +303,27 @@
       <button class="btn btn-custom mobile-space" onclick="">Send BluePoints</button>
       <button class="btn btn-custom mobile-space" onclick="">Transfer Budget</button>
     </div>
-    <div class="budget-graph col-md-6">
-      <div id="container" style="width: 300px; height: 300px; margin: 0">
+    <div class="budget-graph col-md-6" style="position:relative;">
+      <div id="container" style="width: 250px; height: 250px; margin: 0">
+        </div>
+        <div class="guage-numbers">
+          <span class="guage-min">0%</span>
+          <span class="guage-max">100%</span>
+        </div>
+        <div class="guage-details-team">
+          <span class="guage-team">54%</span>
+          <span class="guage-label">Team</span>
+        </div>
+        <div class="guage-details-bu">
+          <span class="guage-bu">71%</span>
+          <span class="guage-label">Business Unit</span>
         </div>
         <div class="guage-details-ibm">
           <span class="guage-ibm">89%</span>
           <span class="guage-label">IBM</span>
-            <div class="guage-date" ><span>as of 19/10/2016</span><button class="btn btn-custom" onclick="">Refresh</button>
-            </div>
-        </div>        
+        </div>     
+        <div class="guage-date" ><span>as of 19/10/2016</span><button class="btn btn-custom" onclick="">Refresh</button>
+        </div>   
       </div>
     </div>
   </div>
