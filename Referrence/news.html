@@ -161,7 +161,7 @@
 <section role="section" id="MobileCarousel" class="visible-xs">
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img  class="img-responsive" src="img/Z-1.jpg" alt="Image">
+      <img  class="img-responsive" src="img/Z-1.jpg" alt="Image" width="1600" height="466">
       <div class="carousel-caption">
         <h2>NEWS</h2>
       </div>      
@@ -178,7 +178,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="img/Z-1.jpg" alt="Image">
+        <img src="img/Z-1.jpg" alt="Image" class="news-image">
         <div class="carousel-caption">
           <h2>NEWS</h2>
         </div>      
@@ -223,21 +223,21 @@
 <main role="main">
   <!-- alert section starts -->
 
-<section class="row news-section" role="section">
+<section class="row news-section news-page" role="section">
   <div class="col-md-8">
-    <h2>Recent News</h2> 
+    <h3>Recent News</h3> 
     <hr>
     <div class="panel-group" id="accordion">
       <div class="panel panel-default">
           <div class="panel-heading">
                <h4 class="panel-title">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#panel1"><i class="glyphicon glyphicon-minus"></i>Redeem your BluePoints now!</a>
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#panel1"><i class="glyphicon glyphicon-minus custom-plus-icon"></i>Redeem your BluePoints now!</a>
               </h4>
 
           </div>
           <div id="panel1" class="panel-collapse collapse in">
               <div class="panel-body">
-                <div>
+                <div class="p-content">
                   <p class="date">25/10/2016</p>
                   <p>To view the catalog of awards, click on the <strong>Redeem BluePoints</strong> tab. From there, you can use your BluePoints to select from a vast selection of merchandise choices or BluePoints travel, which includes airline tickets, hotel accommodations and more.
                       <br />
@@ -250,13 +250,13 @@
       <div class="panel panel-default">
           <div class="panel-heading">
                <h4 class="panel-title">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#panel2"><i class="glyphicon glyphicon-plus"></i>Recognize an IBMer today!</a>
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#panel2"><i class="glyphicon glyphicon-plus custom-plus-icon"></i>Recognize an IBMer today!</a>
               </h4>
 
           </div>
           <div id="panel2" class="panel-collapse collapse">
               <div class="panel-body">
-                <div>
+                <div class="p-content">
                   <p class="date">25/10/2016</p>
                   <p>
                       <p>IBMer Appreciation Cards are designed for IBMers to use to recognize colleagues who demonstrate our Purpose, Values and Practices. You are encouraged to give them as part of your daily work habit of showing thanks and appreciation. And, you can share your thanks and appreciation by copying recipients' managers at the same time you give them.</p>
@@ -269,13 +269,13 @@
       <div class="panel panel-default">
           <div class="panel-heading">
                <h4 class="panel-title">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#panel3"><i class="glyphicon glyphicon-plus"></i>BluePoints</a>
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#panel3"><i class="glyphicon glyphicon-plus custom-plus-icon"></i>BluePoints</a>
               </h4>
 
           </div>
           <div id="panel3" class="panel-collapse collapse">
               <div class="panel-body">
-                <div>
+                <div class="p-content">
                   <p class="date">01/08/2015</p>
                   <p>
                       <p>BluePoints are awarded via the Manager’s Choice Award Program and BluePoints Awards. BluePoints can be saved and accumulated for higher value awards. IBMers can redeem their BluePoints online to select from a vast selection of merchandise choices or BluePoints travel, which includes airline tickets, hotel accommodations and more. All you have to do is click on the Redeem BluePoints tab on the top of the IRC.</p>
@@ -290,7 +290,7 @@
     <hr/>
   </div>  
   <div class="col-md-4">
-    <h2>Archive</h2>
+    <h3>Archive</h3>
     <hr/>
     <div>
       <label for="sortParam"> <span> Sort by:</span> </label> 
@@ -301,17 +301,11 @@
         </select> 
       </span>
       <ul class="archiveList">
-        <li><a href="#NEWS_Redeem">
-                    Redeem your BluePoints now!
-            </a>
+        <li><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#panel1"> Redeem your BluePoints now!</a>
         </li>
-        <li><a href="#NEWS_Recognize">
-                    Recognize an IBMer today!
-            </a>
+        <li> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#panel2"> Recognize an IBMer today!</a>
         </li>
-        <li><a href="#BlueThx">
-                    BluePoints
-            </a>
+        <li><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#panel3"> BluePoints</a>
         </li>
      </ul>
     </div>
